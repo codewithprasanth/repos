@@ -1,0 +1,1426 @@
+{
+	"info": {
+		"_postman_id": "9b777062-ff67-4042-a8c8-88342b46830c",
+		"name": "SAP",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "8194423",
+		"_collection_link": "https://sprintap-0306.postman.co/workspace/My-Workspace~b4ffe2fe-c969-42ec-8681-acab636a7894/collection/29603972-9b777062-ff67-4042-a8c8-88342b46830c?action=share&source=collection_link&creator=8194423"
+	},
+	"item": [
+		{
+			"name": "https://olamagri-qas.test.apimanagement.ap11.hana.ondemand.com/OA_RISE_BAPI",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{access_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\n{\n \"ZGTFIFM_OT_INC_INVOICE_CREATE\": {\n   \n   \"IS_HEADERDATA\": {\n   \"INVOICE_IND\": \"X\",\n   \"DOC_TYPE\": \"RE\",\n   \"DOC_DATE\": \"20250801\",\n   \"PSTNG_DATE\": \"20250805\",\n   \"REF_DOC_NO\": \"6979024840\",\n   \"COMP_CODE\": \"NG12\",\n   \"DIFF_INV\": \"\",\n   \"CURRENCY\": \"NGN\",\n   \"CURRENCY_ISO\": \"NGN\",\n   \"EXCH_RATE\": \"\",\n   \"EXCH_RATE_V\": \"\",\n   \"GROSS_AMOUNT\": \"1200.0000\",\n   \"CALC_TAX_IND\": \"\",\n   \"PMNTTRMS\": \"0001\",\n   \"BLINE_DATE\": \"20250804\",\n   \"DSCT_DAYS1\": \"\",\n   \"DSCT_DAYS2\": \"\",\n   \"NETTERMS\": \"\",\n   \"DSCT_PCT1\": \"\",\n   \"DSCT_PCT2\": \"\",\n   \"IV_CATEGORY\": \"\",\n   \"HEADER_TXT\": \"Test Invoice\",\n   \"PMNT_BLOCK\": \"\",\n   \"DEL_COSTS\": \"\",\n   \"DEL_COSTS_TAXC\": \"\",\n   \"DEL_COSTS_TAXJ\": \"\",\n   \"PERSON_EXT\": \"ROA_SPRINTAP\",\n   \"PYMT_METH\": \"\",\n   \"PMTMTHSUPL\": \"\",\n   \"INV_DOC_NO\": \"\",\n   \"SCBANK_IND\": \"\",\n   \"SUPCOUNTRY\": \"\",\n   \"BLLSRV_IND\": \"\",\n   \"REF_DOC_NO_LONG\": \"\",\n   \"DSCT_AMOUNT\": \"\",\n   \"PO_SUB_NO\": \"\",\n   \"PO_CHECKDG\": \"\",\n   \"PO_REF_NO\": \"\",\n   \"PAYEE_PAYER\": \"\",\n   \"PARTNER_BK\": \"\",\n   \"HOUSEBANKID\": \"\",\n   \"ALLOC_NMBR\": \"\",\n   \"PAYMT_REF\": \"\",\n   \"INV_REF_NO\": \"\",\n   \"INV_YEAR\": \"2025\",\n   \"INV_REC_DATE\": \"\",\n   \"PLANNING_LEVEL\": \"\",\n   \"PLANNING_DATE\": \"\",\n   \"FIXEDTERMS\": \"\",\n   \"BUS_AREA\": \"6235\",\n   \"LOT_NUMBER\": \"\",\n   \"ITEM_TEXT\": \"Test\",\n   \"J_1BNFTYPE\": \"\",\n   \"EU_TRIANG_DEAL\": \"\",\n   \"REPCOUNTRY\": \"\",\n   \"VAT_REG_NO\": \"\",\n   \"BUSINESS_PLACE\": \"\",\n   \"TAX_EXCH_RATE\": \"\",\n   \"GOODS_AFFECTED\": \"\",\n   \"RET_DUE_PROP\": \"\",\n   \"DELIV_POSTING\": \"\",\n   \"RETURN_POSTING\": \"\",\n   \"INV_TRAN\": \"\",\n   \"SIMULATION\": \"\",\n   \"DE_CRE_IND\": \"H\"\n  },\n  \"IV_IGM\": \"\",\n  \"IV_REF\": \"6979024840\",\n  \"IV_URL\": \"\",\n  \"IV_URLDES\": \"\",\n  \n  \"IT_EXTENSIONIN\": {\n   \"item\": {\n    \"STRUCTURE\": \"\",\n    \"VALUEPART1\": \"\",\n    \"VALUEPART2\": \"\",\n    \"VALUEPART3\": \"\",\n    \"VALUEPART4\": \"\"\n   }\n  },\n  \n  \"IT_ITEMDATA\": {\n   \"item\": {\n    \"INVOICE_DOC_ITEM\": \"1\",\n    \"PO_NUMBER\": \"4000224892\",\n    \"PO_ITEM\": \"00001\",\n    \"REF_DOC\": \"5020262117\",\n    \"REF_DOC_YEAR\": \"2025\",\n    \"REF_DOC_IT\": \"00001\",\n    \"DE_CRE_IND\": \"\",\n    \"TAX_CODE\": \"V0\",\n    \"TAXJURCODE\": \"\",\n    \"ITEM_AMOUNT\": \"1200.0000\",\n    \"QUANTITY\": \"1.000\",\n    \"PO_UNIT\": \"MT\",\n    \"PO_UNIT_ISO\": \"MT\",\n    \"PO_PR_QNT\": \"\",\n    \"PO_PR_UOM\": \"\",\n    \"PO_PR_UOM_ISO\": \"\",\n    \"COND_TYPE\": \"\",\n    \"COND_ST_NO\": \"\",\n    \"COND_COUNT\": \"\",\n    \"SHEET_NO\": \"\",\n    \"ITEM_TEXT\": \"Test\",\n    \"FINAL_INV\": \"\",\n    \"SHEET_ITEM\": \"\",\n    \"GRIR_CLEAR_SRV\": \"\",\n    \"FREIGHT_VEN\": \"\",\n    \"CSHDIS_IND\": \"\",\n    \"RETENTION_DOCU_CURRENCY\": \"\",\n    \"RETENTION_PERCENTAGE\": \"\",\n    \"RETENTION_DUE_DATE\": \"\",\n    \"NO_RETENTION\": \"\",\n    \"VALUATION_TYPE\": \"\",\n    \"INV_RELATION\": \"\",\n    \"INV_ITM_ORIGIN\": \"\"\n   }\n  },\n \n  \"IT_TAXDATA\": {\n   \"item\": {\n    \"TAX_CODE\": \"V0\",\n    \"TAX_AMOUNT\": \"\",\n    \"TAX_BASE_AMOUNT\": \"\",\n    \"COND_TYPE\": \"\",\n    \"TAXJURCODE\": \"\",\n    \"TAXJURCODE_DEEP\": \"\",\n    \"ITEMNO_TAX\": \"\"\n   }\n  },\n  \"IT_VENDORITEMSPLITDATA\": {\n   \"item\": {\n    \"SPLIT_KEY\": \"\",\n    \"SPLIT_AMOUNT\": \"\",\n    \"PYMT_METH\": \"\",\n    \"TAX_CODE\": \"V0\",\n    \"PMTMTHSUPL\": \"\",\n    \"PMNTTRMS\": \"\"\n   }\n  },\n  \"IT_WITHTAXDATA\": {\n   \"item\": {\n    \"SPLIT_KEY\": \"\",\n    \"WI_TAX_TYPE\": \"\",\n    \"WI_TAX_CODE\": \"\",\n    \"WI_TAX_BASE\": \"\",\n    \"WI_TAX_AMT\": \"\",\n    \"WI_TAX_WITHHELD_AMT\": \"\"\n   }\n  }\n }\n}\n\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://olamagri-qas.test.apimanagement.ap11.hana.ondemand.com/OA_RISE_BAPI",
+					"protocol": "https",
+					"host": [
+						"olamagri-qas",
+						"test",
+						"apimanagement",
+						"ap11",
+						"hana",
+						"ondemand",
+						"com"
+					],
+					"path": [
+						"OA_RISE_BAPI"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://olamagri-qas.test.apimanagement.ap11.hana.ondemand.com/OA_RISE_BAPI",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"const tokenUrl = \"https://olamagri-qas.test.apimanagement.ap11.hana.ondemand.com/oauth/token\"",
+							"try {",
+							"    const response = await pm.sendRequest({",
+							"    url: \"https://postman-echo.com/get\",",
+							"    method: \"GET\"",
+							"    });",
+							"",
+							"    console.log(response.json());",
+							"} catch (err) {",
+							"    console.error(err);",
+							"}",
+							"try {",
+							"    const response = await pm.sendRequest({",
+							"    url: \"https://postman-echo.com/get\",",
+							"    method: \"GET\"",
+							"    });",
+							"",
+							"    console.log(response.json());",
+							"} catch (err) {",
+							"    console.error(err);",
+							"}",
+							"try {",
+							"    const response = await pm.sendRequest({",
+							"    url: \"https://postman-echo.com/get\",",
+							"    method: \"GET\"",
+							"    });",
+							"",
+							"    console.log(response.json());",
+							"} catch (err) {",
+							"    console.error(err);",
+							"}",
+							"try {",
+							"    const response = await pm.sendRequest({",
+							"    url: \"https://postman-echo.com/get\",",
+							"    method: \"GET\"",
+							"    });",
+							"",
+							"    console.log(response.json());",
+							"} catch (err) {",
+							"    console.error(err);",
+							"}",
+							"const clientId = \"ng9LLOW6tjdKPy9tXSUatMQixdhsWSMK\"",
+							"const clientSecret = \"gZPQzJwJph8IvOyd\"",
+							"// Optional: Only fetch if token missing or expired",
+							"let tokenNeeded = !pm.environment.get(\"access_token\");",
+							"// Add expiry checks as needed",
+							"",
+							"if (tokenNeeded) {",
+							"    const body = `grant_type=client_credentials&client_id=${encodeURIComponent(clientId)}&client_secret=${encodeURIComponent(clientSecret)}`;",
+							"    pm.sendRequest({",
+							"        url: tokenUrl,",
+							"        method: 'POST',",
+							"        header: {",
+							"            'Content-Type': 'application/x-www-form-urlencoded'",
+							"        },",
+							"        body: {",
+							"            mode: 'urlencoded',",
+							"            urlencoded: [",
+							"                { key: 'grant_type', value: 'client_credentials' },",
+							"                { key: 'client_id', value: clientId },",
+							"                { key: 'client_secret', value: clientSecret }",
+							"            ]",
+							"        }",
+							"    }, function (err, res) {",
+							"        if (err) {",
+							"            console.log('Token fetch error:', err);",
+							"            return;",
+							"        }",
+							"        const data = res.json();",
+							"        // Adjust 'access_token' if your response uses a different key",
+							"        if (data.access_token) {",
+							"            pm.environment.set('access_token', data.access_token);",
+							"        } else {",
+							"            console.error('Token response invalid:', data);",
+							"        }",
+							"    });",
+							"}",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{access_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\n{\n    \"BAPI_PO_GETDETAIL1\": {\n        \"ACCOUNT_ASSIGNMENT\": \"X\",\n        \"DELIVERY_ADDRESS\": \"\",\n        \"HEADER_TEXT\": \"\",\n        \"INVOICEPLAN\": \"\",\n        \"ITEM_TEXT\": \"\",\n        \"PURCHASEORDER\": \"4000224892\",\n        \"SERIALNUMBERS\": \"\",\n        \"SERVICES\": \"\",\n        \"VERSION\": \"\",\n        \"ALLVERSIONS\": {\n            \"item\": {\n                \"DOC_TYPE\": \"\",\n                \"DOC_NUMBER\": \"\",\n                \"ITEM_NUMBER\": \"\",\n                \"VERSION\": \"\",\n                \"CREATED_BY\": \"\",\n                \"CR_ON\": \"\",\n                \"REC_TIME\": \"\",\n                \"RELEASED_BY\": \"\",\n                \"RELEASE_DATE\": \"\",\n                \"RELEASE_TIME\": \"\",\n                \"RELEASEBY_PUR\": \"\",\n                \"RELEASEDATE_PUR\": \"\",\n                \"RELEASETIME_PUR\": \"\",\n                \"REASON\": \"\",\n                \"DESCRIPTION\": \"\",\n                \"REQ_BY_EXT\": \"\",\n                \"REQ_BY\": \"\",\n                \"NET_VALUE\": \"\",\n                \"VALUE_CHANGED\": \"\",\n                \"CURRENCY\": \"\",\n                \"CURRENCY_ISO\": \"\",\n                \"POST_DATE\": \"\",\n                \"COMPLETED\": \"\",\n                \"STATUS\": \"\",\n                \"DELETE_IND\": \"\",\n                \"STATUS_DOC_OLD\": \"\"\n            }\n        },\n        \"EXTENSIONOUT\": {\n            \"item\": {\n                \"STRUCTURE\": \"\",\n                \"VALUEPART1\": \"\",\n                \"VALUEPART2\": \"\",\n                \"VALUEPART3\": \"\",\n                \"VALUEPART4\": \"\"\n            }\n        },\n        \"INVPLANHEADER\": {\n            \"item\": {\n                \"DOC_ITEM\": \"\",\n                \"IV_PLAN_NUM\": \"\",\n                \"CATEGORY\": \"\",\n                \"IP_TYPE\": \"\",\n                \"SORT_FLD\": \"\",\n                \"START_DATE\": \"\",\n                \"END_DATE\": \"\",\n                \"HORIZON\": \"\",\n                \"ORGN_ST_DAT\": \"\",\n                \"ORGN_END_DAT\": \"\",\n                \"PERIOD\": \"\",\n                \"LNGTH_STAND_PRD\": \"\",\n                \"REF_IV_PLAN_NUM\": \"\",\n                \"DATES_FROM\": \"\",\n                \"IN_ADVANCE\": \"\",\n                \"ORGN_FROM_DAT\": \"\",\n                \"DEV_BILL_DAT\": \"\",\n                \"CALENDER_ID\": \"\",\n                \"DATES_TO\": \"\",\n                \"ORGN_UNTIL_DAT\": \"\",\n                \"PO_NUMBER\": \"\",\n                \"UNLIMITED\": \"\",\n                \"AUTO_COR_DAT\": \"\"\n            }\n        },\n        \"INVPLANITEM\": {\n            \"item\": {\n                \"DOC_ITEM\": \"\",\n                \"IV_PLAN_NUM\": \"\",\n                \"IV_PLAN_ITEM\": \"\",\n                \"DEL_IND\": \"\",\n                \"DATE_CATG\": \"\",\n                \"DATE_DESC\": \"\",\n                \"SETT_DATE_FROM\": \"\",\n                \"BILL_RULE\": \"\",\n                \"INVOICE_PERCENTAGE\": \"\",\n                \"CURRENCY\": \"\",\n                \"CURRENCY_ISO\": \"\",\n                \"EXCHG_RAT_DAT\": \"\",\n                \"BILL_VALUE\": \"\",\n                \"BILLING_BLOCK\": \"\",\n                \"BILLING_STATUS\": \"\",\n                \"SETT_DATE_TO\": \"\",\n                \"CALENDER_ID\": \"\",\n                \"BILL_DATE\": \"\",\n                \"CASH_DISCOUNT\": \"\",\n                \"REBATE_BASIS1\": \"\",\n                \"PRICING_OK\": \"\",\n                \"MILESTONE_NUM\": \"\",\n                \"MILESTONE_USE\": \"\",\n                \"MANUALLY\": \"\"\n            }\n        },\n        \"POACCOUNT\": {\n            \"item\": {\n                \"PO_ITEM\": \"\",\n                \"SERIAL_NO\": \"\",\n                \"DELETE_IND\": \"\",\n                \"CREAT_DATE\": \"\",\n                \"QUANTITY\": \"\",\n                \"DISTR_PERC\": \"\",\n                \"NET_VALUE\": \"\",\n                \"GL_ACCOUNT\": \"\",\n                \"BUS_AREA\": \"\",\n                \"COSTCENTER\": \"\",\n                \"SD_DOC\": \"\",\n                \"ITM_NUMBER\": \"\",\n                \"SCHED_LINE\": \"\",\n                \"ASSET_NO\": \"\",\n                \"SUB_NUMBER\": \"\",\n                \"ORDERID\": \"\",\n                \"GR_RCPT\": \"\",\n                \"UNLOAD_PT\": \"\",\n                \"CO_AREA\": \"\",\n                \"COSTOBJECT\": \"\",\n                \"PROFIT_CTR\": \"\",\n                \"WBS_ELEMENT\": \"\",\n                \"NETWORK\": \"\",\n                \"RL_EST_KEY\": \"\",\n                \"PART_ACCT\": \"\",\n                \"CMMT_ITEM\": \"\",\n                \"REC_IND\": \"\",\n                \"FUNDS_CTR\": \"\",\n                \"FUND\": \"\",\n                \"FUNC_AREA\": \"\",\n                \"REF_DATE\": \"\",\n                \"TAX_CODE\": \"\",\n                \"TAXJURCODE\": \"\",\n                \"NOND_ITAX\": \"\",\n                \"ACTTYPE\": \"\",\n                \"CO_BUSPROC\": \"\",\n                \"RES_DOC\": \"\",\n                \"RES_ITEM\": \"\",\n                \"ACTIVITY\": \"\",\n                \"GRANT_NBR\": \"\",\n                \"CMMT_ITEM_LONG\": \"\",\n                \"FUNC_AREA_LONG\": \"\",\n                \"BUDGET_PERIOD\": \"\",\n                \"FINAL_IND\": \"\",\n                \"FINAL_REASON\": \"\"\n            }\n        },\n        \"POADDRDELIVERY\": {\n            \"item\": {\n                \"PO_ITEM\": \"\",\n                \"ADDR_NO\": \"\",\n                \"FORMOFADDR\": \"\",\n                \"NAME\": \"\",\n                \"NAME_2\": \"\",\n                \"NAME_3\": \"\",\n                \"NAME_4\": \"\",\n                \"C_O_NAME\": \"\",\n                \"CITY\": \"\",\n                \"DISTRICT\": \"\",\n                \"CITY_NO\": \"\",\n                \"POSTL_COD1\": \"\",\n                \"POSTL_COD2\": \"\",\n                \"POSTL_COD3\": \"\",\n                \"PO_BOX\": \"\",\n                \"PO_BOX_CIT\": \"\",\n                \"DELIV_DIS\": \"\",\n                \"STREET\": \"\",\n                \"STREET_NO\": \"\",\n                \"STR_ABBR\": \"\",\n                \"HOUSE_NO\": \"\",\n                \"STR_SUPPL1\": \"\",\n                \"STR_SUPPL2\": \"\",\n                \"LOCATION\": \"\",\n                \"BUILDING\": \"\",\n                \"FLOOR\": \"\",\n                \"ROOM_NO\": \"\",\n                \"COUNTRY\": \"\",\n                \"LANGU\": \"\",\n                \"REGION\": \"\",\n                \"SORT1\": \"\",\n                \"SORT2\": \"\",\n                \"TIME_ZONE\": \"\",\n                \"TAXJURCODE\": \"\",\n                \"ADR_NOTES\": \"\",\n                \"COMM_TYPE\": \"\",\n                \"TEL1_NUMBR\": \"\",\n                \"TEL1_EXT\": \"\",\n                \"FAX_NUMBER\": \"\",\n                \"FAX_EXTENS\": \"\",\n                \"STREET_LNG\": \"\",\n                \"DISTRCT_NO\": \"\",\n                \"CHCKSTATUS\": \"\",\n                \"PBOXCIT_NO\": \"\",\n                \"TRANSPZONE\": \"\",\n                \"HOUSE_NO2\": \"\",\n                \"E_MAIL\": \"\",\n                \"STR_SUPPL3\": \"\",\n                \"TITLE\": \"\",\n                \"COUNTRYISO\": \"\",\n                \"LANGU_ISO\": \"\",\n                \"BUILD_LONG\": \"\",\n                \"REGIOGROUP\": \"\",\n                \"SUPP_VENDOR\": \"\",\n                \"CUSTOMER\": \"\",\n                \"SC_VENDOR\": \"\"\n            }\n        },\n        \"POCOMPONENTS\": {\n            \"item\": {\n                \"PO_ITEM\": \"\",\n                \"SCHED_LINE\": \"\",\n                \"ITEM_NO\": \"\",\n                \"MATERIAL\": \"\",\n                \"ENTRY_QUANTITY\": \"\",\n                \"ENTRY_UOM\": \"\",\n                \"ENTRY_UOM_ISO\": \"\",\n                \"FIXED_QUAN\": \"\",\n                \"PLANT\": \"\",\n                \"REQ_DATE\": \"\",\n                \"CHANGE_ID\": \"\",\n                \"MATERIAL_EXTERNAL\": \"\",\n                \"MATERIAL_GUID\": \"\",\n                \"MATERIAL_VERSION\": \"\",\n                \"ITEM_CAT\": \"\",\n                \"REQ_QUAN\": \"\",\n                \"BASE_UOM\": \"\",\n                \"BASE_UOM_ISO\": \"\",\n                \"PHANT_ITEM\": \"\",\n                \"BATCH\": \"\",\n                \"MAT_PROVISION\": \"\",\n                \"ISS_ST_LOC\": \"\",\n                \"REV_LEV\": \"\",\n                \"REQ_SEGMENT\": \"\"\n            }\n        },\n        \"POCOND\": {\n            \"item\": {\n                \"CONDITION_NO\": \"\",\n                \"ITM_NUMBER\": \"\",\n                \"COND_ST_NO\": \"\",\n                \"COND_COUNT\": \"\",\n                \"COND_TYPE\": \"\",\n                \"COND_VALUE\": \"\",\n                \"CURRENCY\": \"\",\n                \"CURRENCY_ISO\": \"\",\n                \"COND_UNIT\": \"\",\n                \"COND_UNIT_ISO\": \"\",\n                \"COND_P_UNT\": \"\",\n                \"APPLICATIO\": \"\",\n                \"CONPRICDAT\": \"\",\n                \"CALCTYPCON\": \"\",\n                \"CONBASEVAL\": \"\",\n                \"CONEXCHRAT\": \"\",\n                \"NUMCONVERT\": \"\",\n                \"DENOMINATO\": \"\",\n                \"CONDTYPE\": \"\",\n                \"STAT_CON\": \"\",\n                \"SCALETYPE\": \"\",\n                \"ACCRUALS\": \"\",\n                \"CONINVOLST\": \"\",\n                \"CONDORIGIN\": \"\",\n                \"GROUPCOND\": \"\",\n                \"COND_UPDAT\": \"\",\n                \"ACCESS_SEQ\": \"\",\n                \"CONDCOUNT\": \"\",\n                \"CONDCNTRL\": \"\",\n                \"CONDISACTI\": \"\",\n                \"CONDCLASS\": \"\",\n                \"FACTBASVAL\": \"\",\n                \"SCALEBASIN\": \"\",\n                \"SCALBASVAL\": \"\",\n                \"UNITMEASUR\": \"\",\n                \"UNITMEASUR_ISO\": \"\",\n                \"CURRENCKEY\": \"\",\n                \"CURRENCKEY_ISO\": \"\",\n                \"CONDINCOMP\": \"\",\n                \"CONDCONFIG\": \"\",\n                \"CONDCHAMAN\": \"\",\n                \"COND_NO\": \"\",\n                \"CHANGE_ID\": \"\",\n                \"VENDOR_NO\": \"\"\n            }\n        },\n        \"POCONDHEADER\": {\n            \"item\": {\n                \"CONDITION_NO\": \"\",\n                \"ITM_NUMBER\": \"\",\n                \"COND_ST_NO\": \"\",\n                \"COND_COUNT\": \"\",\n                \"COND_TYPE\": \"\",\n                \"COND_VALUE\": \"\",\n                \"CURRENCY\": \"\",\n                \"CURRENCY_ISO\": \"\",\n                \"COND_UNIT\": \"\",\n                \"COND_UNIT_ISO\": \"\",\n                \"COND_P_UNT\": \"\",\n                \"APPLICATIO\": \"\",\n                \"CONPRICDAT\": \"\",\n                \"CALCTYPCON\": \"\",\n                \"CONBASEVAL\": \"\",\n                \"CONEXCHRAT\": \"\",\n                \"NUMCONVERT\": \"\",\n                \"DENOMINATO\": \"\",\n                \"CONDTYPE\": \"\",\n                \"STAT_CON\": \"\",\n                \"SCALETYPE\": \"\",\n                \"ACCRUALS\": \"\",\n                \"CONINVOLST\": \"\",\n                \"CONDORIGIN\": \"\",\n                \"GROUPCOND\": \"\",\n                \"COND_UPDAT\": \"\",\n                \"ACCESS_SEQ\": \"\",\n                \"CONDCOUNT\": \"\",\n                \"CONDCNTRL\": \"\",\n                \"CONDISACTI\": \"\",\n                \"CONDCLASS\": \"\",\n                \"FACTBASVAL\": \"\",\n                \"SCALEBASIN\": \"\",\n                \"SCALBASVAL\": \"\",\n                \"UNITMEASUR\": \"\",\n                \"UNITMEASUR_ISO\": \"\",\n                \"CURRENCKEY\": \"\",\n                \"CURRENCKEY_ISO\": \"\",\n                \"CONDINCOMP\": \"\",\n                \"CONDCONFIG\": \"\",\n                \"CONDCHAMAN\": \"\",\n                \"COND_NO\": \"\",\n                \"CHANGE_ID\": \"\",\n                \"VENDOR_NO\": \"\"\n            }\n        },\n        \"POCONFIRMATION\": {\n            \"item\": {\n                \"PO_ITEM\": \"\",\n                \"CONF_SER\": \"\",\n                \"CONF_TYPE\": \"\",\n                \"CONF_NAME\": \"\",\n                \"DEL_DATCAT\": \"\",\n                \"DEL_DATCAT_EXT\": \"\",\n                \"DELIV_DATE\": \"\",\n                \"DELIV_TIME\": \"\",\n                \"QUANTITY\": \"\",\n                \"DELETE_IND\": \"\",\n                \"DISPO_REL\": \"\",\n                \"RECEIPT_REL\": \"\",\n                \"EXT_DOC\": \"\",\n                \"DELIV_NUMB\": \"\",\n                \"DELIV_ITEM\": \"\",\n                \"EXT_DOC_LONG\": \"\",\n                \"HANDOVERDATE\": \"\",\n                \"HANDOVERTIME\": \"\"\n            }\n        },\n        \"POCONTRACTLIMITS\": {\n            \"item\": {\n                \"PCKG_NO\": \"\",\n                \"LINE_NO\": \"\",\n                \"CON_NUMBER\": \"\",\n                \"CON_ITEM\": \"\",\n                \"LIMIT\": \"\",\n                \"NO_LIMIT\": \"\",\n                \"PRICE_CHG\": \"\",\n                \"SHORT_TEXT\": \"\",\n                \"DELETE_IND\": \"\"\n            }\n        },\n        \"POEXPIMPITEM\": {\n            \"item\": {\n                \"PO_ITEM\": \"\",\n                \"BUSINESS_TRANSACTION_TYPE\": \"\",\n                \"EXPORT_IMPORT_PROCEDURE\": \"\",\n                \"COUNTRYORI\": \"\",\n                \"COUNTRYORI_ISO\": \"\",\n                \"REGIONORIG\": \"\",\n                \"COMM_CODE\": \"\",\n                \"SHIPPING_COUNTRY\": \"\",\n                \"SHIPPING_COUNTRY_ISO\": \"\"\n            }\n        },\n        \"POHISTORY\": {\n            \"item\": {\n                \"PO_ITEM\": \"\",\n                \"SERIAL_NO\": \"\",\n                \"PROCESS_ID\": \"\",\n                \"DOC_YEAR\": \"\",\n                \"MAT_DOC\": \"\",\n                \"MATDOC_ITM\": \"\",\n                \"HIST_TYPE\": \"\",\n                \"MOVE_TYPE\": \"\",\n                \"PSTNG_DATE\": \"\",\n                \"QUANTITY\": \"\",\n                \"VAL_LOCCUR\": \"\",\n                \"VAL_FORCUR\": \"\",\n                \"CURRENCY\": \"\",\n                \"CL_VAL_LOC\": \"\",\n                \"BLOCKED_QY\": \"\",\n                \"BL_QTY\": \"\",\n                \"DB_CR_IND\": \"\",\n                \"VAL_TYPE\": \"\",\n                \"NO_MORE_GR\": \"\",\n                \"REF_DOC_NO\": \"\",\n                \"REF_DOC_YR\": \"\",\n                \"REF_DOC\": \"\",\n                \"REF_DOC_IT\": \"\",\n                \"MOVE_REAS\": \"\",\n                \"ENTRY_DATE\": \"\",\n                \"ENTRY_TIME\": \"\",\n                \"IVVAL_LOC\": \"\",\n                \"IVVAL_FOR\": \"\",\n                \"MATERIAL\": \"\",\n                \"PLANT\": \"\",\n                \"CONF_SER\": \"\",\n                \"CONDITION\": \"\",\n                \"TAX_CODE\": \"\",\n                \"DELIV_QTY\": \"\",\n                \"DELIV_UNIT\": \"\",\n                \"PUR_MAT\": \"\",\n                \"LOC_CURR\": \"\",\n                \"BATCH\": \"\",\n                \"DOC_DATE\": \"\",\n                \"CURRENCY_ISO\": \"\",\n                \"LOC_CURR_ISO\": \"\",\n                \"DELIV_UNIT_ISO\": \"\",\n                \"MATERIAL_EXTERNAL\": \"\",\n                \"MATERIAL_GUID\": \"\",\n                \"MATERIAL_VERSION\": \"\",\n                \"PUR_MAT_EXTERNAL\": \"\",\n                \"PUR_MAT_GUID\": \"\",\n                \"PUR_MAT_VERSION\": \"\",\n                \"REF_DOC_NO_LONG\": \"\",\n                \"STK_SEGMENT\": \"\"\n            }\n        },\n        \"POHISTORY_MA\": {\n            \"item\": {\n                \"PO_ITEM\": \"\",\n                \"SERIAL_NO\": \"\",\n                \"PROCESS_ID\": \"\",\n                \"DOC_YEAR\": \"\",\n                \"MAT_DOC\": \"\",\n                \"MATDOC_ITM\": \"\",\n                \"REF_DOC_YR\": \"\",\n                \"REF_DOC\": \"\",\n                \"REF_DOC_IT\": \"\",\n                \"DB_CR_IND\": \"\",\n                \"QUANTITY_F\": \"\",\n                \"QUANTITY\": \"\",\n                \"VAL_LOCCUR\": \"\",\n                \"VAL_FORCUR\": \"\",\n                \"CL_VAL_LOC\": \"\",\n                \"IVVAL_LOC\": \"\",\n                \"IVVAL_FOR\": \"\",\n                \"TAX_CODE\": \"\"\n            }\n        },\n        \"POHISTORY_TOTALS\": {\n            \"item\": {\n                \"PO_ITEM\": \"\",\n                \"SERIAL_NO\": \"\",\n                \"WITHDR_QTY\": \"\",\n                \"BLOCKED_QY\": \"\",\n                \"BL_QTY\": \"\",\n                \"DELIV_QTY\": \"\",\n                \"PO_PR_QNT\": \"\",\n                \"VAL_GR_LOC\": \"\",\n                \"VAL_GR_FOR\": \"\",\n                \"IV_QTY\": \"\",\n                \"IV_QTY_PO\": \"\",\n                \"VAL_IV_LOC\": \"\",\n                \"VAL_IV_FOR\": \"\",\n                \"CL_VAL_LOC\": \"\",\n                \"CL_VAL_FOR\": \"\",\n                \"DOP_VL_LOC\": \"\",\n                \"IVVAL_LOC\": \"\",\n                \"IVVAL_FOR\": \"\",\n                \"DL_QTY_TRSP\": \"\",\n                \"BL_QTY_TOTAL\": \"\",\n                \"DL_QTY_TOTAL\": \"\",\n                \"IV_QTY_TOTAL\": \"\",\n                \"CURRENCY\": \"\",\n                \"CURRENCY_ISO\": \"\"\n            }\n        },\n        \"POITEM\": {\n            \"item\": {\n                \"PO_ITEM\": \"\",\n                \"DELETE_IND\": \"\",\n                \"SHORT_TEXT\": \"\",\n                \"MATERIAL\": \"\",\n                \"MATERIAL_EXTERNAL\": \"\",\n                \"MATERIAL_GUID\": \"\",\n                \"MATERIAL_VERSION\": \"\",\n                \"EMATERIAL\": \"\",\n                \"EMATERIAL_EXTERNAL\": \"\",\n                \"EMATERIAL_GUID\": \"\",\n                \"EMATERIAL_VERSION\": \"\",\n                \"PLANT\": \"\",\n                \"STGE_LOC\": \"\",\n                \"TRACKINGNO\": \"\",\n                \"MATL_GROUP\": \"\",\n                \"INFO_REC\": \"\",\n                \"VEND_MAT\": \"\",\n                \"QUANTITY\": \"\",\n                \"PO_UNIT\": \"\",\n                \"PO_UNIT_ISO\": \"\",\n                \"ORDERPR_UN\": \"\",\n                \"ORDERPR_UN_ISO\": \"\",\n                \"CONV_NUM1\": \"\",\n                \"CONV_DEN1\": \"\",\n                \"NET_PRICE\": \"\",\n                \"PRICE_UNIT\": \"\",\n                \"GR_PR_TIME\": \"\",\n                \"TAX_CODE\": \"\",\n                \"BON_GRP1\": \"\",\n                \"QUAL_INSP\": \"\",\n                \"INFO_UPD\": \"\",\n                \"PRNT_PRICE\": \"\",\n                \"EST_PRICE\": \"\",\n                \"REMINDER1\": \"\",\n                \"REMINDER2\": \"\",\n                \"REMINDER3\": \"\",\n                \"OVER_DLV_TOL\": \"\",\n                \"UNLIMITED_DLV\": \"\",\n                \"UNDER_DLV_TOL\": \"\",\n                \"VAL_TYPE\": \"\",\n                \"NO_MORE_GR\": \"\",\n                \"FINAL_INV\": \"\",\n                \"ITEM_CAT\": \"\",\n                \"ACCTASSCAT\": \"\",\n                \"DISTRIB\": \"\",\n                \"PART_INV\": \"\",\n                \"GR_IND\": \"\",\n                \"GR_NON_VAL\": \"\",\n                \"IR_IND\": \"\",\n                \"FREE_ITEM\": \"\",\n                \"GR_BASEDIV\": \"\",\n                \"ACKN_REQD\": \"\",\n                \"ACKNOWL_NO\": \"\",\n                \"AGREEMENT\": \"\",\n                \"AGMT_ITEM\": \"\",\n                \"SHIPPING\": \"\",\n                \"CUSTOMER\": \"\",\n                \"COND_GROUP\": \"\",\n                \"NO_DISCT\": \"\",\n                \"PLAN_DEL\": \"\",\n                \"NET_WEIGHT\": \"\",\n                \"WEIGHTUNIT\": \"\",\n                \"WEIGHTUNIT_ISO\": \"\",\n                \"TAXJURCODE\": \"\",\n                \"CTRL_KEY\": \"\",\n                \"CONF_CTRL\": \"\",\n                \"REV_LEV\": \"\",\n                \"FUND\": \"\",\n                \"FUNDS_CTR\": \"\",\n                \"CMMT_ITEM\": \"\",\n                \"PRICEDATE\": \"\",\n                \"PRICE_DATE\": \"\",\n                \"GROSS_WT\": \"\",\n                \"VOLUME\": \"\",\n                \"VOLUMEUNIT\": \"\",\n                \"VOLUMEUNIT_ISO\": \"\",\n                \"INCOTERMS1\": \"\",\n                \"INCOTERMS2\": \"\",\n                \"PRE_VENDOR\": \"\",\n                \"VEND_PART\": \"\",\n                \"HL_ITEM\": \"\",\n                \"GR_TO_DATE\": \"\",\n                \"SUPP_VENDOR\": \"\",\n                \"SC_VENDOR\": \"\",\n                \"KANBAN_IND\": \"\",\n                \"ERS\": \"\",\n                \"R_PROMO\": \"\",\n                \"POINTS\": \"\",\n                \"POINT_UNIT\": \"\",\n                \"POINT_UNIT_ISO\": \"\",\n                \"SEASON\": \"\",\n                \"SEASON_YR\": \"\",\n                \"BON_GRP2\": \"\",\n                \"BON_GRP3\": \"\",\n                \"SETT_ITEM\": \"\",\n                \"MINREMLIFE\": \"\",\n                \"RFQ_NO\": \"\",\n                \"RFQ_ITEM\": \"\",\n                \"PREQ_NO\": \"\",\n                \"PREQ_ITEM\": \"\",\n                \"REF_DOC\": \"\",\n                \"REF_ITEM\": \"\",\n                \"SI_CAT\": \"\",\n                \"RET_ITEM\": \"\",\n                \"AT_RELEV\": \"\",\n                \"ORDER_REASON\": \"\",\n                \"BRAS_NBM\": \"\",\n                \"MATL_USAGE\": \"\",\n                \"MAT_ORIGIN\": \"\",\n                \"IN_HOUSE\": \"\",\n                \"INDUS3\": \"\",\n                \"INF_INDEX\": \"\",\n                \"UNTIL_DATE\": \"\",\n                \"DELIV_COMPL\": \"\",\n                \"PART_DELIV\": \"\",\n                \"SHIP_BLOCKED\": \"\",\n                \"PREQ_NAME\": \"\",\n                \"PERIOD_IND_EXPIRATION_DATE\": \"\",\n                \"INT_OBJ_NO\": \"\",\n                \"PCKG_NO\": \"\",\n                \"BATCH\": \"\",\n                \"VENDRBATCH\": \"\",\n                \"CALCTYPE\": \"\",\n                \"GRANT_NBR\": \"\",\n                \"CMMT_ITEM_LONG\": \"\",\n                \"FUNC_AREA_LONG\": \"\",\n                \"NO_ROUNDING\": \"\",\n                \"PO_PRICE\": \"\",\n                \"SUPPL_STLOC\": \"\",\n                \"SRV_BASED_IV\": \"\",\n                \"FUNDS_RES\": \"\",\n                \"RES_ITEM\": \"\",\n                \"ORIG_ACCEPT\": \"\",\n                \"ALLOC_TBL\": \"\",\n                \"ALLOC_TBL_ITEM\": \"\",\n                \"SRC_STOCK_TYPE\": \"\",\n                \"REASON_REJ\": \"\",\n                \"CRM_SALES_ORDER_NO\": \"\",\n                \"CRM_SALES_ORDER_ITEM_NO\": \"\",\n                \"CRM_REF_SALES_ORDER_NO\": \"\",\n                \"CRM_REF_SO_ITEM_NO\": \"\",\n                \"PRIO_URGENCY\": \"\",\n                \"PRIO_REQUIREMENT\": \"\",\n                \"REASON_CODE\": \"\",\n                \"FUND_LONG\": \"\",\n                \"LONG_ITEM_NUMBER\": \"\",\n                \"EXTERNAL_SORT_NUMBER\": \"\",\n                \"EXTERNAL_HIERARCHY_TYPE\": \"\",\n                \"RETENTION_PERCENTAGE\": \"\",\n                \"DOWNPAY_TYPE\": \"\",\n                \"DOWNPAY_AMOUNT\": \"\",\n                \"DOWNPAY_PERCENT\": \"\",\n                \"DOWNPAY_DUEDATE\": \"\",\n                \"EXT_RFX_NUMBER\": \"\",\n                \"EXT_RFX_ITEM\": \"\",\n                \"EXT_RFX_SYSTEM\": \"\",\n                \"SRM_CONTRACT_ID\": \"\",\n                \"SRM_CONTRACT_ITM\": \"\",\n                \"BUDGET_PERIOD\": \"\",\n                \"BLOCK_REASON_ID\": \"\",\n                \"BLOCK_REASON_TEXT\": \"\",\n                \"SPE_CRM_FKREL\": \"\",\n                \"DATE_QTY_FIXED\": \"\",\n                \"GI_BASED_GR\": \"\",\n                \"SHIPTYPE\": \"\",\n                \"HANDOVERLOC\": \"\",\n                \"TC_AUT_DET\": \"\",\n                \"MANUAL_TC_REASON\": \"\",\n                \"FISCAL_INCENTIVE\": \"\",\n                \"FISCAL_INCENTIVE_ID\": \"\",\n                \"TAX_SUBJECT_ST\": \"\",\n                \"REQ_SEGMENT\": \"\",\n                \"STK_SEGMENT\": \"\",\n                \"INCOTERMS2L\": \"\",\n                \"INCOTERMS3L\": \"\"\n            }\n        },\n        \"POLIMITS\": {\n            \"item\": {\n                \"PCKG_NO\": \"\",\n                \"LIMIT\": \"\",\n                \"NO_LIMIT\": \"\",\n                \"EXP_VALUE\": \"\",\n                \"SSC_EXIST\": \"\",\n                \"CON_EXIST\": \"\",\n                \"TMP_EXIST\": \"\",\n                \"PRICE_CHG\": \"\",\n                \"FREE_LIMIT\": \"\",\n                \"NO_FRLIMIT\": \"\",\n                \"SERV_TYPE\": \"\",\n                \"EDITION\": \"\",\n                \"SSC_LIMIT\": \"\",\n                \"SSC_NOLIM\": \"\",\n                \"SSC_PRSCHG\": \"\",\n                \"SSC_PERC\": \"\",\n                \"TMP_NUMBER\": \"\",\n                \"TMP_LIMIT\": \"\",\n                \"TMP_NOLIM\": \"\",\n                \"TMP_PRSCHG\": \"\",\n                \"TMP_PERC\": \"\",\n                \"CONT_PERC\": \"\"\n            }\n        },\n        \"POPARTNER\": {\n            \"item\": {\n                \"PARTNERDESC\": \"\",\n                \"LANGU\": \"\",\n                \"BUSPARTNO\": \"\",\n                \"DELETE_IND\": \"\"\n            }\n        },\n        \"POSCHEDULE\": {\n            \"item\": {\n                \"PO_ITEM\": \"\",\n                \"SCHED_LINE\": \"\",\n                \"DEL_DATCAT_EXT\": \"\",\n                \"DELIVERY_DATE\": \"\",\n                \"QUANTITY\": \"\",\n                \"DELIV_TIME\": \"\",\n                \"STAT_DATE\": \"\",\n                \"PREQ_NO\": \"\",\n                \"PREQ_ITEM\": \"\",\n                \"PO_DATE\": \"\",\n                \"ROUTESCHED\": \"\",\n                \"MS_DATE\": \"\",\n                \"MS_TIME\": \"\",\n                \"LOAD_DATE\": \"\",\n                \"LOAD_TIME\": \"\",\n                \"TP_DATE\": \"\",\n                \"TP_TIME\": \"\",\n                \"GI_DATE\": \"\",\n                \"GI_TIME\": \"\",\n                \"DELETE_IND\": \"\",\n                \"REQ_CLOSED\": \"\",\n                \"GR_END_DATE\": \"\",\n                \"GR_END_TIME\": \"\",\n                \"COM_QTY\": \"\",\n                \"COM_DATE\": \"\",\n                \"GEO_ROUTE\": \"\",\n                \"HANDOVERDATE\": \"\",\n                \"HANDOVERTIME\": \"\"\n            }\n        },\n        \"POSERVICES\": {\n            \"item\": {\n                \"PCKG_NO\": \"\",\n                \"LINE_NO\": \"\",\n                \"EXT_LINE\": \"\",\n                \"OUTL_LEVEL\": \"\",\n                \"OUTL_NO\": \"\",\n                \"OUTL_IND\": \"\",\n                \"SUBPCKG_NO\": \"\",\n                \"SERVICE\": \"\",\n                \"SERV_TYPE\": \"\",\n                \"EDITION\": \"\",\n                \"SSC_ITEM\": \"\",\n                \"EXT_SERV\": \"\",\n                \"QUANTITY\": \"\",\n                \"BASE_UOM\": \"\",\n                \"UOM_ISO\": \"\",\n                \"OVF_TOL\": \"\",\n                \"OVF_UNLIM\": \"\",\n                \"PRICE_UNIT\": \"\",\n                \"GR_PRICE\": \"\",\n                \"FROM_LINE\": \"\",\n                \"TO_LINE\": \"\",\n                \"SHORT_TEXT\": \"\",\n                \"DISTRIB\": \"\",\n                \"PERS_NO\": \"\",\n                \"WAGETYPE\": \"\",\n                \"PLN_PCKG\": \"\",\n                \"PLN_LINE\": \"\",\n                \"CON_PCKG\": \"\",\n                \"CON_LINE\": \"\",\n                \"TMP_PCKG\": \"\",\n                \"TMP_LINE\": \"\",\n                \"SSC_LIM\": \"\",\n                \"LIMIT_LINE\": \"\",\n                \"TARGET_VAL\": \"\",\n                \"BASLINE_NO\": \"\",\n                \"BASIC_LINE\": \"\",\n                \"ALTERNAT\": \"\",\n                \"BIDDER\": \"\",\n                \"SUPP_LINE\": \"\",\n                \"OPEN_QTY\": \"\",\n                \"INFORM\": \"\",\n                \"BLANKET\": \"\",\n                \"EVENTUAL\": \"\",\n                \"TAX_CODE\": \"\",\n                \"TAXJURCODE\": \"\",\n                \"PRICE_CHG\": \"\",\n                \"MATL_GROUP\": \"\",\n                \"DATE\": \"\",\n                \"BEGINTIME\": \"\",\n                \"ENDTIME\": \"\",\n                \"EXTPERS_NO\": \"\",\n                \"FORMULA\": \"\",\n                \"FORM_VAL1\": \"\",\n                \"FORM_VAL2\": \"\",\n                \"FORM_VAL3\": \"\",\n                \"FORM_VAL4\": \"\",\n                \"FORM_VAL5\": \"\",\n                \"USERF1_NUM\": \"\",\n                \"USERF2_NUM\": \"\",\n                \"USERF1_TXT\": \"\",\n                \"USERF2_TXT\": \"\",\n                \"HI_LINE_NO\": \"\",\n                \"EXTREFKEY\": \"\",\n                \"DELETE_IND\": \"\",\n                \"PER_SDATE\": \"\",\n                \"PER_EDATE\": \"\",\n                \"EXTERNAL_ITEM_ID\": \"\",\n                \"SERVICE_ITEM_KEY\": \"\",\n                \"NET_VALUE\": \"\"\n            }\n        },\n        \"POSHIPPINGEXP\": {\n            \"item\": {\n                \"PO_ITEM\": \"\",\n                \"SHIP_POINT\": \"\",\n                \"DLV_PRIO\": \"\",\n                \"ROUTE\": \"\",\n                \"CUSTOMER\": \"\",\n                \"SOLD_TO\": \"\",\n                \"FWDAGENT\": \"\",\n                \"SALESORG\": \"\",\n                \"DISTR_CHAN\": \"\",\n                \"DIVISION\": \"\",\n                \"DEL_CREATE_DATE\": \"\",\n                \"PLND_DELRY\": \"\",\n                \"LANGU\": \"\",\n                \"LANGU_ISO\": \"\",\n                \"SHIP_COND\": \"\",\n                \"LOADINGGRP\": \"\",\n                \"TRANS_GRP\": \"\",\n                \"UNLOAD_PT\": \"\",\n                \"ORDCOMBIND\": \"\",\n                \"TIME_ZONE\": \"\",\n                \"AUTH_NUMBER\": \"\",\n                \"SRC_DLV_NO\": \"\",\n                \"SRC_HANDLG_UNIT\": \"\",\n                \"INSPOUT_GUID\": \"\",\n                \"FOLLOW_UP\": \"\"\n            }\n        },\n        \"POSRVACCESSVALUES\": {\n            \"item\": {\n                \"PCKG_NO\": \"\",\n                \"LINE_NO\": \"\",\n                \"SERNO_LINE\": \"\",\n                \"PERCENTAGE\": \"\",\n                \"SERIAL_NO\": \"\",\n                \"QUANTITY\": \"\",\n                \"NET_VALUE\": \"\"\n            }\n        },\n        \"POTEXTHEADER\": {\n            \"item\": {\n                \"PO_NUMBER\": \"\",\n                \"PO_ITEM\": \"\",\n                \"TEXT_ID\": \"\",\n                \"TEXT_FORM\": \"\",\n                \"TEXT_LINE\": \"\"\n            }\n        },\n        \"POTEXTITEM\": {\n            \"item\": {\n                \"PO_NUMBER\": \"\",\n                \"PO_ITEM\": \"\",\n                \"TEXT_ID\": \"\",\n                \"TEXT_FORM\": \"\",\n                \"TEXT_LINE\": \"\"\n            }\n        },\n        \"RETURN\": {\n            \"item\": {\n                \"TYPE\": \"\",\n                \"ID\": \"\",\n                \"NUMBER\": \"\",\n                \"MESSAGE\": \"\",\n                \"LOG_NO\": \"\",\n                \"LOG_MSG_NO\": \"\",\n                \"MESSAGE_V1\": \"\",\n                \"MESSAGE_V2\": \"\",\n                \"MESSAGE_V3\": \"\",\n                \"MESSAGE_V4\": \"\",\n                \"PARAMETER\": \"\",\n                \"ROW\": \"\",\n                \"FIELD\": \"\",\n                \"SYSTEM\": \"\"\n            }\n        },\n        \"SERIALNUMBER\": {\n            \"item\": {\n                \"PO_ITEM\": \"\",\n                \"SCHED_LINE\": \"\",\n                \"DELETE_IND\": \"\",\n                \"SERIALNO\": \"\",\n                \"UII\": \"\"\n            }\n        }\n    }\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://olamagri-qas.test.apimanagement.ap11.hana.ondemand.com/OA_RISE_BAPI",
+					"protocol": "https",
+					"host": [
+						"olamagri-qas",
+						"test",
+						"apimanagement",
+						"ap11",
+						"hana",
+						"ondemand",
+						"com"
+					],
+					"path": [
+						"OA_RISE_BAPI"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://olamagri-qas.test.apimanagement.ap11.hana.ondemand.com/oauth/token",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var jsonData = pm.response.json();",
+							"if (jsonData.access_token) {",
+							"    pm.environment.set(\"access_token\", jsonData.access_token);",
+							"}",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "text"
+						},
+						{
+							"key": "client_id",
+							"value": "ng9LLOW6tjdKPy9tXSUatMQixdhsWSMK",
+							"type": "text"
+						},
+						{
+							"key": "client_secret",
+							"value": "gZPQzJwJph8IvOyd",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://olamagri-qas.test.apimanagement.ap11.hana.ondemand.com/oauth/token",
+					"protocol": "https",
+					"host": [
+						"olamagri-qas",
+						"test",
+						"apimanagement",
+						"ap11",
+						"hana",
+						"ondemand",
+						"com"
+					],
+					"path": [
+						"oauth",
+						"token"
+					]
+				},
+				"description": "access token"
+			},
+			"response": []
+		},
+		{
+			"name": "https://olamagri-qas.test.apimanagement.ap11.hana.ondemand.com/OA_RISE_BAPI",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"const tokenUrl = pm.environment.get(\"token_url\");",
+							"",
+							"const clientId = pm.environment.get(\"client_id\");",
+							"const clientSecret = pm.environment.get(\"client_secret\");",
+							"",
+							"",
+							"// Add expiry checks as needed",
+							"",
+							"if (true) {",
+							"    const body = `grant_type=client_credentials&client_id=${encodeURIComponent(clientId)}&client_secret=${encodeURIComponent(clientSecret)}`;",
+							"    pm.sendRequest({",
+							"        url: tokenUrl,",
+							"        method: 'POST',",
+							"        header: {",
+							"            'Content-Type': 'application/x-www-form-urlencoded'",
+							"        },",
+							"        body: {",
+							"            mode: 'urlencoded',",
+							"            urlencoded: [",
+							"                { key: 'grant_type', value: 'client_credentials' },",
+							"                { key: 'client_id', value: clientId },",
+							"                { key: 'client_secret', value: clientSecret }",
+							"            ]",
+							"        }",
+							"    }, function (err, res) {",
+							"        if (err) {",
+							"            console.log('Token fetch error:', err);",
+							"            return;",
+							"        }",
+							"        const data = res.json();",
+							"        // Adjust 'access_token' if your response uses a different key",
+							"        if (data.access_token) {",
+							"            pm.environment.set('access_token', data.access_token);",
+							"        } else {",
+							"            console.error('Token response invalid:', data);",
+							"        }",
+							"    });",
+							"}",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{access_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\n{\n    \"ZGTMMFM_OT_VENDOR_DETAILS\": {\n        \"IV_BUKRS\": \"NG12\",\n        \"IV_FROM_DATE\": \"\",\n        \"IV_INDICATOR\": \"X\",\n        \"IV_KTOKK\": \"\",\n        \"IV_LIFNR\": \"1611953\",\n        \"IV_LIFNR_TO\": \"\",\n        \"IV_TO_DATE\": \"\",\n        \"ET_RETURN\": {\n            \"item\": {\n                \"TYPE\": \"\",\n                \"ID\": \"\",\n                \"NUMBER\": \"\",\n                \"MESSAGE\": \"\",\n                \"LOG_NO\": \"\",\n                \"LOG_MSG_NO\": \"\",\n                \"MESSAGE_V1\": \"\",\n                \"MESSAGE_V2\": \"\",\n                \"MESSAGE_V3\": \"\",\n                \"MESSAGE_V4\": \"\",\n                \"PARAMETER\": \"\",\n                \"ROW\": \"\",\n                \"FIELD\": \"\",\n                \"SYSTEM\": \"\"\n            }\n        },\n        \"ET_VENDOR_DETAILS\": {\n            \"item\": {\n                \"LIFNR\": \"\",\n                \"BUKRS\": \"\",\n                \"NAME1\": \"\",\n                \"ADRNR\": \"\",\n                \"ORT01\": \"\",\n                \"STRAS\": \"\",\n                \"PSTLZ\": \"\",\n                \"LAND1\": \"\",\n                \"TELFX\": \"\",\n                \"TELF1\": \"\",\n                \"VEND_TYPE\": \"\",\n                \"STCEG\": \"\",\n                \"AKONT\": \"\",\n                \"TAX_NUMBER\": \"\",\n                \"INDUSTRY\": \"\",\n                \"INSTRUCTION_KEY\": \"\",\n                \"EMAIL\": \"\",\n                \"EMAIL1\": \"\",\n                \"EMAIL2\": \"\",\n                \"EMAIL3\": \"\",\n                \"NOTE\": \"\",\n                \"NOTE1\": \"\",\n                \"NOTE2\": \"\",\n                \"NOTE3\": \"\",\n                \"WERKS\": \"\",\n                \"ZTERM\": \"\",\n                \"TERM_DESC\": \"\",\n                \"TERM_VAL\": \"\",\n                \"KTOKK\": \"\",\n                \"BANKS\": \"\",\n                \"BANK_NAME\": \"\",\n                \"ACC_NO\": \"\",\n                \"CURRENCY\": \"\",\n                \"ACC_NAME\": \"\",\n                \"SWIFT\": \"\",\n                \"IBAN\": \"\",\n                \"LOEVM\": \"\",\n                \"GSTIN\": \"\",\n                \"IS_SWISS\": \"\",\n                \"WHT\": \"\",\n                \"ZWELS\": \"\",\n                \"HBKID\": \"\",\n                \"WITHT\": \"\",\n                \"WT_WITHCD\": \"\",\n                \"QSCOD\": \"\",\n                \"QSATZ\": \"\",\n                \"QSREC\": \"\",\n                \"WT_WTSTCD\": \"\",\n                \"WT_EXNR\": \"\",\n                \"WT_EXRT\": \"\",\n                \"WT_EXDF\": \"\",\n                \"WT_EXDT\": \"\",\n                \"WT_WTEXRS\": \"\",\n                \"WT_SUBJCT\": \"\",\n                \"REGIO\": \"\",\n                \"J_1IPANNO\": \"\",\n                \"VEN_CLASS\": \"\",\n                \"GST_DES\": \"\",\n                \"BANKL\": \"\",\n                \"BVTYP\": \"\",\n                \"BKREF\": \"\",\n                \"LNRZA\": \"\",\n                \"ISR_NUMBER\": \"\",\n                \"CATEGORY\": \"\"\n            }\n        }\n    }\n}\n\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://olamagri-qas.test.apimanagement.ap11.hana.ondemand.com/OA_RISE_BAPI",
+					"protocol": "https",
+					"host": [
+						"olamagri-qas",
+						"test",
+						"apimanagement",
+						"ap11",
+						"hana",
+						"ondemand",
+						"com"
+					],
+					"path": [
+						"OA_RISE_BAPI"
+					]
+				},
+				"description": "vendor master"
+			},
+			"response": []
+		},
+		{
+			"name": "https://olamagri-qas.test.apimanagement.ap11.hana.ondemand.com/OA_RISE_BAPI",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"const tokenUrl = \"https://olamagri-qas.test.apimanagement.ap11.hana.ondemand.com/oauth/token\"",
+							"try {",
+							"    const response = await pm.sendRequest({",
+							"    url: \"https://postman-echo.com/get\",",
+							"    method: \"GET\"",
+							"    });",
+							"",
+							"    console.log(response.json());",
+							"} catch (err) {",
+							"    console.error(err);",
+							"}",
+							"try {",
+							"    const response = await pm.sendRequest({",
+							"    url: \"https://postman-echo.com/get\",",
+							"    method: \"GET\"",
+							"    });",
+							"",
+							"    console.log(response.json());",
+							"} catch (err) {",
+							"    console.error(err);",
+							"}",
+							"try {",
+							"    const response = await pm.sendRequest({",
+							"    url: \"https://postman-echo.com/get\",",
+							"    method: \"GET\"",
+							"    });",
+							"",
+							"    console.log(response.json());",
+							"} catch (err) {",
+							"    console.error(err);",
+							"}",
+							"try {",
+							"    const response = await pm.sendRequest({",
+							"    url: \"https://postman-echo.com/get\",",
+							"    method: \"GET\"",
+							"    });",
+							"",
+							"    console.log(response.json());",
+							"} catch (err) {",
+							"    console.error(err);",
+							"}",
+							"const clientId = \"ng9LLOW6tjdKPy9tXSUatMQixdhsWSMK\"",
+							"const clientSecret = \"gZPQzJwJph8IvOyd\"",
+							"// Optional: Only fetch if token missing or expired",
+							"let tokenNeeded = !pm.environment.get(\"access_token\");",
+							"// Add expiry checks as needed",
+							"",
+							"if (tokenNeeded) {",
+							"    const body = `grant_type=client_credentials&client_id=${encodeURIComponent(clientId)}&client_secret=${encodeURIComponent(clientSecret)}`;",
+							"    pm.sendRequest({",
+							"        url: tokenUrl,",
+							"        method: 'POST',",
+							"        header: {",
+							"            'Content-Type': 'application/x-www-form-urlencoded'",
+							"        },",
+							"        body: {",
+							"            mode: 'urlencoded',",
+							"            urlencoded: [",
+							"                { key: 'grant_type', value: 'client_credentials' },",
+							"                { key: 'client_id', value: clientId },",
+							"                { key: 'client_secret', value: clientSecret }",
+							"            ]",
+							"        }",
+							"    }, function (err, res) {",
+							"        if (err) {",
+							"            console.log('Token fetch error:', err);",
+							"            return;",
+							"        }",
+							"        const data = res.json();",
+							"        // Adjust 'access_token' if your response uses a different key",
+							"        if (data.access_token) {",
+							"            pm.environment.set('access_token', data.access_token);",
+							"        } else {",
+							"            console.error('Token response invalid:', data);",
+							"        }",
+							"    });",
+							"}",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{access_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"ZGTFIFM_OT_WHT_MASTER\": {\n\t\t\"IV_COMP_CODE\": \"NG12\",\n\t\t\"IV_COUNTRY_KEY\": \"NG\",\n\t\t\"IV_KTOPL\": \"\",\n\t\t\"ET_RETURN\": {\n\t\t\t\"item\": {\n\t\t\t\t\"TYPE\": \"\",\n\t\t\t\t\"ID\": \"\",\n\t\t\t\t\"NUMBER\": \"\",\n\t\t\t\t\"MESSAGE\": \"\",\n\t\t\t\t\"LOG_NO\": \"\",\n\t\t\t\t\"LOG_MSG_NO\": \"\",\n\t\t\t\t\"MESSAGE_V1\": \"\",\n\t\t\t\t\"MESSAGE_V2\": \"\",\n\t\t\t\t\"MESSAGE_V3\": \"\",\n\t\t\t\t\"MESSAGE_V4\": \"\",\n\t\t\t\t\"PARAMETER\": \"\",\n\t\t\t\t\"ROW\": \"\",\n\t\t\t\t\"FIELD\": \"\",\n\t\t\t\t\"SYSTEM\": \"\"\n\t\t\t}\n\t\t},\n\t\t\"ET_WHT_DETAILS\": {\n\t\t\t\"item\": {\n\t\t\t\t\"BUKRS\": \"\",\n\t\t\t\t\"LAND1\": \"\",\n\t\t\t\t\"WITHT\": \"\",\n\t\t\t\t\"WT_WITHCD\": \"\",\n\t\t\t\t\"QSCOD\": \"\",\n\t\t\t\t\"QPROZ\": \"\",\n\t\t\t\t\"QSATZ\": \"\",\n\t\t\t\t\"QSATR\": \"\",\n\t\t\t\t\"XQFOR\": \"\",\n\t\t\t\t\"REGIO\": \"\",\n\t\t\t\t\"FPRCD\": \"\",\n\t\t\t\t\"QEKAR\": \"\",\n\t\t\t\t\"WT_POSIN\": \"\",\n\t\t\t\t\"WT_RATEZ\": \"\",\n\t\t\t\t\"WT_RATEN\": \"\",\n\t\t\t\t\"WITHCD2\": \"\",\n\t\t\t\t\"TEXT40\": \"\"\n\t\t\t}\n\t\t},\n\t\t\"ET_WHT_GL_DETAILS\": {\n\t\t\t\"item\": {\n\t\t\t\t\"KTOPL\": \"\",\n\t\t\t\t\"KTOSL\": \"\",\n\t\t\t\t\"BWMOD\": \"\",\n\t\t\t\t\"KOMOK\": \"\",\n\t\t\t\t\"BKLAS\": \"\",\n\t\t\t\t\"KONTS\": \"\",\n\t\t\t\t\"KONTH\": \"\"\n\t\t\t}\n\t\t}\n\t}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://olamagri-qas.test.apimanagement.ap11.hana.ondemand.com/OA_RISE_BAPI",
+					"protocol": "https",
+					"host": [
+						"olamagri-qas",
+						"test",
+						"apimanagement",
+						"ap11",
+						"hana",
+						"ondemand",
+						"com"
+					],
+					"path": [
+						"OA_RISE_BAPI"
+					]
+				},
+				"description": "WHT"
+			},
+			"response": []
+		},
+		{
+			"name": "https://olamagri-qas.test.apimanagement.ap11.hana.ondemand.com/OA_RISE_BAPI",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"const tokenUrl = \"https://olamagri-qas.test.apimanagement.ap11.hana.ondemand.com/oauth/token\"",
+							"try {",
+							"    const response = await pm.sendRequest({",
+							"    url: \"https://postman-echo.com/get\",",
+							"    method: \"GET\"",
+							"    });",
+							"",
+							"    console.log(response.json());",
+							"} catch (err) {",
+							"    console.error(err);",
+							"}",
+							"try {",
+							"    const response = await pm.sendRequest({",
+							"    url: \"https://postman-echo.com/get\",",
+							"    method: \"GET\"",
+							"    });",
+							"",
+							"    console.log(response.json());",
+							"} catch (err) {",
+							"    console.error(err);",
+							"}",
+							"try {",
+							"    const response = await pm.sendRequest({",
+							"    url: \"https://postman-echo.com/get\",",
+							"    method: \"GET\"",
+							"    });",
+							"",
+							"    console.log(response.json());",
+							"} catch (err) {",
+							"    console.error(err);",
+							"}",
+							"try {",
+							"    const response = await pm.sendRequest({",
+							"    url: \"https://postman-echo.com/get\",",
+							"    method: \"GET\"",
+							"    });",
+							"",
+							"    console.log(response.json());",
+							"} catch (err) {",
+							"    console.error(err);",
+							"}",
+							"const clientId = \"ng9LLOW6tjdKPy9tXSUatMQixdhsWSMK\"",
+							"const clientSecret = \"gZPQzJwJph8IvOyd\"",
+							"// Optional: Only fetch if token missing or expired",
+							"let tokenNeeded = !pm.environment.get(\"access_token\");",
+							"// Add expiry checks as needed",
+							"",
+							"if (tokenNeeded) {",
+							"    const body = `grant_type=client_credentials&client_id=${encodeURIComponent(clientId)}&client_secret=${encodeURIComponent(clientSecret)}`;",
+							"    pm.sendRequest({",
+							"        url: tokenUrl,",
+							"        method: 'POST',",
+							"        header: {",
+							"            'Content-Type': 'application/x-www-form-urlencoded'",
+							"        },",
+							"        body: {",
+							"            mode: 'urlencoded',",
+							"            urlencoded: [",
+							"                { key: 'grant_type', value: 'client_credentials' },",
+							"                { key: 'client_id', value: clientId },",
+							"                { key: 'client_secret', value: clientSecret }",
+							"            ]",
+							"        }",
+							"    }, function (err, res) {",
+							"        if (err) {",
+							"            console.log('Token fetch error:', err);",
+							"            return;",
+							"        }",
+							"        const data = res.json();",
+							"        // Adjust 'access_token' if your response uses a different key",
+							"        if (data.access_token) {",
+							"            pm.environment.set('access_token', data.access_token);",
+							"        } else {",
+							"            console.error('Token response invalid:', data);",
+							"        }",
+							"    });",
+							"}",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{access_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"ZGTFIFM_OT_PAYMENT_DET_RFC\": {\n\t\t\"IV_BUKRS\": \"NG12\",\n\t\t\"IV_FROM_BELNR\": \"\",\n\t\t\"IV_FROM_DATE\": \"\",\n\t\t\"IV_FROM_LIFNR\": \"\",\n\t\t\"IV_GJAHR\": \"\",\n\t\t\"IV_TO_BELNR\": \"\",\n\t\t\"IV_TO_DATE\": \"\",\n\t\t\"IV_TO_LIFNR\": \"\",\n\t\t\"ET_PAYMENT\": {\n\t\t\t\"item\": {\n\t\t\t\t\"BELNR\": \"\",\n\t\t\t\t\"BUKRS\": \"\",\n\t\t\t\t\"GJAHR\": \"\",\n\t\t\t\t\"AUGBL\": \"\",\n\t\t\t\t\"AUGDT\": \"\",\n\t\t\t\t\"ASSIGNEMENT\": \"\",\n\t\t\t\t\"PAYMENT_BLOCK\": \"\",\n\t\t\t\t\"PAY_DESC\": \"\"\n\t\t\t}\n\t\t},\n\t\t\"ET_RETURN\": {\n\t\t\t\"item\": {\n\t\t\t\t\"TYPE\": \"\",\n\t\t\t\t\"ID\": \"\",\n\t\t\t\t\"NUMBER\": \"\",\n\t\t\t\t\"MESSAGE\": \"\",\n\t\t\t\t\"LOG_NO\": \"\",\n\t\t\t\t\"LOG_MSG_NO\": \"\",\n\t\t\t\t\"MESSAGE_V1\": \"\",\n\t\t\t\t\"MESSAGE_V2\": \"\",\n\t\t\t\t\"MESSAGE_V3\": \"\",\n\t\t\t\t\"MESSAGE_V4\": \"\",\n\t\t\t\t\"PARAMETER\": \"\",\n\t\t\t\t\"ROW\": \"\",\n\t\t\t\t\"FIELD\": \"\",\n\t\t\t\t\"SYSTEM\": \"\"\n\t\t\t}\n\t\t}\n\t}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://olamagri-qas.test.apimanagement.ap11.hana.ondemand.com/OA_RISE_BAPI",
+					"protocol": "https",
+					"host": [
+						"olamagri-qas",
+						"test",
+						"apimanagement",
+						"ap11",
+						"hana",
+						"ondemand",
+						"com"
+					],
+					"path": [
+						"OA_RISE_BAPI"
+					]
+				},
+				"description": "payment\n"
+			},
+			"response": []
+		},
+		{
+			"name": "https://olamagri-qas.test.apimanagement.ap11.hana.ondemand.com/OA_RISE_BAPI",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"const tokenUrl = \"https://olamagri-qas.test.apimanagement.ap11.hana.ondemand.com/oauth/token\"",
+							"try {",
+							"    const response = await pm.sendRequest({",
+							"    url: \"https://postman-echo.com/get\",",
+							"    method: \"GET\"",
+							"    });",
+							"",
+							"    console.log(response.json());",
+							"} catch (err) {",
+							"    console.error(err);",
+							"}",
+							"try {",
+							"    const response = await pm.sendRequest({",
+							"    url: \"https://postman-echo.com/get\",",
+							"    method: \"GET\"",
+							"    });",
+							"",
+							"    console.log(response.json());",
+							"} catch (err) {",
+							"    console.error(err);",
+							"}",
+							"try {",
+							"    const response = await pm.sendRequest({",
+							"    url: \"https://postman-echo.com/get\",",
+							"    method: \"GET\"",
+							"    });",
+							"",
+							"    console.log(response.json());",
+							"} catch (err) {",
+							"    console.error(err);",
+							"}",
+							"try {",
+							"    const response = await pm.sendRequest({",
+							"    url: \"https://postman-echo.com/get\",",
+							"    method: \"GET\"",
+							"    });",
+							"",
+							"    console.log(response.json());",
+							"} catch (err) {",
+							"    console.error(err);",
+							"}",
+							"const clientId = \"ng9LLOW6tjdKPy9tXSUatMQixdhsWSMK\"",
+							"const clientSecret = \"gZPQzJwJph8IvOyd\"",
+							"// Optional: Only fetch if token missing or expired",
+							"let tokenNeeded = !pm.environment.get(\"access_token\");",
+							"// Add expiry checks as needed",
+							"",
+							"if (tokenNeeded) {",
+							"    const body = `grant_type=client_credentials&client_id=${encodeURIComponent(clientId)}&client_secret=${encodeURIComponent(clientSecret)}`;",
+							"    pm.sendRequest({",
+							"        url: tokenUrl,",
+							"        method: 'POST',",
+							"        header: {",
+							"            'Content-Type': 'application/x-www-form-urlencoded'",
+							"        },",
+							"        body: {",
+							"            mode: 'urlencoded',",
+							"            urlencoded: [",
+							"                { key: 'grant_type', value: 'client_credentials' },",
+							"                { key: 'client_id', value: clientId },",
+							"                { key: 'client_secret', value: clientSecret }",
+							"            ]",
+							"        }",
+							"    }, function (err, res) {",
+							"        if (err) {",
+							"            console.log('Token fetch error:', err);",
+							"            return;",
+							"        }",
+							"        const data = res.json();",
+							"        // Adjust 'access_token' if your response uses a different key",
+							"        if (data.access_token) {",
+							"            pm.environment.set('access_token', data.access_token);",
+							"        } else {",
+							"            console.error('Token response invalid:', data);",
+							"        }",
+							"    });",
+							"}",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{access_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"ZGTFIFM_OT_GL_DET_RFC\": {\n\t\t\"IV_BUKRS\": \"SG03\",\n\t\t\"IV_FROM_DATE\": 20240721,\n\t\t\"IV_TO_DATE\": 20250721,\n\t\t\"ET_GL\": {\n\t\t\t\"item\": {\n\t\t\t\t\"BUKRS\": \"\",\n\t\t\t\t\"SAKNR\": \"\",\n\t\t\t\t\"TXT50\": \"\"\n\t\t\t}\n\t\t},\n\t\t\"ET_RETURN\": {\n\t\t\t\"item\": {\n\t\t\t\t\"TYPE\": \"\",\n\t\t\t\t\"ID\": \"\",\n\t\t\t\t\"NUMBER\": \"\",\n\t\t\t\t\"MESSAGE\": \"\",\n\t\t\t\t\"LOG_NO\": \"\",\n\t\t\t\t\"LOG_MSG_NO\": \"\",\n\t\t\t\t\"MESSAGE_V1\": \"\",\n\t\t\t\t\"MESSAGE_V2\": \"\",\n\t\t\t\t\"MESSAGE_V3\": \"\",\n\t\t\t\t\"MESSAGE_V4\": \"\",\n\t\t\t\t\"PARAMETER\": \"\",\n\t\t\t\t\"ROW\": \"\",\n\t\t\t\t\"FIELD\": \"\",\n\t\t\t\t\"SYSTEM\": \"\"\n\t\t\t}\n\t\t}\n\t}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://olamagri-qas.test.apimanagement.ap11.hana.ondemand.com/OA_RISE_BAPI",
+					"protocol": "https",
+					"host": [
+						"olamagri-qas",
+						"test",
+						"apimanagement",
+						"ap11",
+						"hana",
+						"ondemand",
+						"com"
+					],
+					"path": [
+						"OA_RISE_BAPI"
+					]
+				},
+				"description": "GL details\n"
+			},
+			"response": []
+		},
+		{
+			"name": "https://olamagri-qas.test.apimanagement.ap11.hana.ondemand.com/OA_RISE_BAPI",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{access_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"ZSGBFIFM_VENDORBANK_ECM\": {\n\t\t\"LV_BUKRS\": \"NG12\",\n\t\t\"LT_ECM_OUTPUT\": {\n\t\t\t\"item\": {\n\t\t\t\t\"NAME\": \"\",\n\t\t\t\t\"KTOKK\": \"\",\n\t\t\t\t\"KUNNR\": \"\",\n\t\t\t\t\"VBUND\": \"\",\n\t\t\t\t\"AKONT\": \"\",\n\t\t\t\t\"ZUAWA\": \"\",\n\t\t\t\t\"ZWELS\": \"\",\n\t\t\t\t\"HBKID\": \"\",\n\t\t\t\t\"ALTKN\": \"\",\n\t\t\t\t\"BUKRS\": \"\",\n\t\t\t\t\"LIFNR\": \"\",\n\t\t\t\t\"BANKS\": \"\",\n\t\t\t\t\"BANKL\": \"\",\n\t\t\t\t\"BANKACCOUNT\": \"\",\n\t\t\t\t\"BKONT\": \"\",\n\t\t\t\t\"BVTYP\": \"\",\n\t\t\t\t\"KOINH\": \"\",\n\t\t\t\t\"IBAN\": \"\",\n\t\t\t\t\"VALID_FROM\": \"\",\n\t\t\t\t\"BANKA\": \"\",\n\t\t\t\t\"STRAS\": \"\",\n\t\t\t\t\"SWIFT\": \"\",\n\t\t\t\t\"BANKSREC\": \"\",\n\t\t\t\t\"BANKKREC\": \"\",\n\t\t\t\t\"BANKNREC\": \"\",\n\t\t\t\t\"WAERS\": \"\",\n\t\t\t\t\"CHAINBANKT\": \"\",\n\t\t\t\t\"CHAINBANKS_01\": \"\",\n\t\t\t\t\"CHAINBANKK_01\": \"\",\n\t\t\t\t\"CHAINBANKN_01\": \"\",\n\t\t\t\t\"IBAN_01\": \"\",\n\t\t\t\t\"SWIFT_01\": \"\",\n\t\t\t\t\"BANKA_01\": \"\",\n\t\t\t\t\"STRAS_01\": \"\",\n\t\t\t\t\"CHAINBANKS_02\": \"\",\n\t\t\t\t\"CHAINBANKK_02\": \"\",\n\t\t\t\t\"CHAINBANKN_02\": \"\",\n\t\t\t\t\"IBAN_02\": \"\",\n\t\t\t\t\"SWIFT_02\": \"\",\n\t\t\t\t\"BANKA_02\": \"\",\n\t\t\t\t\"STRAS_02\": \"\",\n\t\t\t\t\"CHAINBANKS_03\": \"\",\n\t\t\t\t\"CHAINBANKK_03\": \"\",\n\t\t\t\t\"CHAINBANKN_03\": \"\",\n\t\t\t\t\"IBAN_03\": \"\",\n\t\t\t\t\"SWIFT_03\": \"\",\n\t\t\t\t\"BANKA_03\": \"\",\n\t\t\t\t\"STRAS_03\": \"\",\n\t\t\t\t\"PROVZ\": \"\",\n\t\t\t\t\"BNKLZ\": \"\",\n\t\t\t\t\"ORT01\": \"\",\n\t\t\t\t\"BRNCH\": \"\"\n\t\t\t}\n\t\t},\n\t\t\"LT_RETURN\": {\n\t\t\t\"item\": {\n\t\t\t\t\"TYPE\": \"\",\n\t\t\t\t\"ID\": \"\",\n\t\t\t\t\"NUMBER\": \"\",\n\t\t\t\t\"MESSAGE\": \"\",\n\t\t\t\t\"LOG_NO\": \"\",\n\t\t\t\t\"LOG_MSG_NO\": \"\",\n\t\t\t\t\"MESSAGE_V1\": \"\",\n\t\t\t\t\"MESSAGE_V2\": \"\",\n\t\t\t\t\"MESSAGE_V3\": \"\",\n\t\t\t\t\"MESSAGE_V4\": \"\",\n\t\t\t\t\"PARAMETER\": \"\",\n\t\t\t\t\"ROW\": \"\",\n\t\t\t\t\"FIELD\": \"\",\n\t\t\t\t\"SYSTEM\": \"\"\n\t\t\t}\n\t\t},\n\t\t\"LT_VENDOR_INPUT\": {\n\t\t\t\"item\": {\n\t\t\t\t\"MANDT\": \"\",\n\t\t\t\t\"LIFNR\": \"\",\n\t\t\t\t\"LAND1\": \"\",\n\t\t\t\t\"NAME1\": \"\",\n\t\t\t\t\"NAME2\": \"\",\n\t\t\t\t\"NAME3\": \"\",\n\t\t\t\t\"NAME4\": \"\",\n\t\t\t\t\"ORT01\": \"\",\n\t\t\t\t\"ORT02\": \"\",\n\t\t\t\t\"PFACH\": \"\",\n\t\t\t\t\"PSTL2\": \"\",\n\t\t\t\t\"PSTLZ\": \"\",\n\t\t\t\t\"REGIO\": \"\",\n\t\t\t\t\"SORTL\": \"\",\n\t\t\t\t\"STRAS\": \"\",\n\t\t\t\t\"ADRNR\": \"\",\n\t\t\t\t\"MCOD1\": \"\",\n\t\t\t\t\"MCOD2\": \"\",\n\t\t\t\t\"MCOD3\": \"\",\n\t\t\t\t\"ANRED\": \"\",\n\t\t\t\t\"BAHNS\": \"\",\n\t\t\t\t\"BBBNR\": \"\",\n\t\t\t\t\"BBSNR\": \"\",\n\t\t\t\t\"BEGRU\": \"\",\n\t\t\t\t\"BRSCH\": \"\",\n\t\t\t\t\"BUBKZ\": \"\",\n\t\t\t\t\"DATLT\": \"\",\n\t\t\t\t\"DTAMS\": \"\",\n\t\t\t\t\"DTAWS\": \"\",\n\t\t\t\t\"ERDAT\": \"\",\n\t\t\t\t\"ERNAM\": \"\",\n\t\t\t\t\"ESRNR\": \"\",\n\t\t\t\t\"KONZS\": \"\",\n\t\t\t\t\"KTOKK\": \"\",\n\t\t\t\t\"KUNNR\": \"\",\n\t\t\t\t\"LNRZA\": \"\",\n\t\t\t\t\"LOEVM\": \"\",\n\t\t\t\t\"SPERR\": \"\",\n\t\t\t\t\"SPERM\": \"\",\n\t\t\t\t\"SPRAS\": \"\",\n\t\t\t\t\"STCD1\": \"\",\n\t\t\t\t\"STCD2\": \"\",\n\t\t\t\t\"STKZA\": \"\",\n\t\t\t\t\"STKZU\": \"\",\n\t\t\t\t\"TELBX\": \"\",\n\t\t\t\t\"TELF1\": \"\",\n\t\t\t\t\"TELF2\": \"\",\n\t\t\t\t\"TELFX\": \"\",\n\t\t\t\t\"TELTX\": \"\",\n\t\t\t\t\"TELX1\": \"\",\n\t\t\t\t\"XCPDK\": \"\",\n\t\t\t\t\"XZEMP\": \"\",\n\t\t\t\t\"VBUND\": \"\",\n\t\t\t\t\"FISKN\": \"\",\n\t\t\t\t\"STCEG\": \"\",\n\t\t\t\t\"STKZN\": \"\",\n\t\t\t\t\"SPERQ\": \"\",\n\t\t\t\t\"GBORT\": \"\",\n\t\t\t\t\"GBDAT\": \"\",\n\t\t\t\t\"SEXKZ\": \"\",\n\t\t\t\t\"KRAUS\": \"\",\n\t\t\t\t\"REVDB\": \"\",\n\t\t\t\t\"QSSYS\": \"\",\n\t\t\t\t\"KTOCK\": \"\",\n\t\t\t\t\"PFORT\": \"\",\n\t\t\t\t\"WERKS\": \"\",\n\t\t\t\t\"LTSNA\": \"\",\n\t\t\t\t\"WERKR\": \"\",\n\t\t\t\t\"PLKAL\": \"\",\n\t\t\t\t\"DUEFL\": \"\",\n\t\t\t\t\"TXJCD\": \"\",\n\t\t\t\t\"SPERZ\": \"\",\n\t\t\t\t\"SCACD\": \"\",\n\t\t\t\t\"SFRGR\": \"\",\n\t\t\t\t\"LZONE\": \"\",\n\t\t\t\t\"XLFZA\": \"\",\n\t\t\t\t\"DLGRP\": \"\",\n\t\t\t\t\"FITYP\": \"\",\n\t\t\t\t\"STCDT\": \"\",\n\t\t\t\t\"REGSS\": \"\",\n\t\t\t\t\"ACTSS\": \"\",\n\t\t\t\t\"STCD3\": \"\",\n\t\t\t\t\"STCD4\": \"\",\n\t\t\t\t\"STCD5\": \"\",\n\t\t\t\t\"STCD6\": \"\",\n\t\t\t\t\"IPISP\": \"\",\n\t\t\t\t\"TAXBS\": \"\",\n\t\t\t\t\"PROFS\": \"\",\n\t\t\t\t\"STGDL\": \"\",\n\t\t\t\t\"EMNFR\": \"\",\n\t\t\t\t\"LFURL\": \"\",\n\t\t\t\t\"J_1KFREPRE\": \"\",\n\t\t\t\t\"J_1KFTBUS\": \"\",\n\t\t\t\t\"J_1KFTIND\": \"\",\n\t\t\t\t\"CONFS\": \"\",\n\t\t\t\t\"UPDAT\": \"\",\n\t\t\t\t\"UPTIM\": \"\",\n\t\t\t\t\"NODEL\": \"\",\n\t\t\t\t\"QSSYSDAT\": \"\",\n\t\t\t\t\"PODKZB\": \"\",\n\t\t\t\t\"FISKU\": \"\",\n\t\t\t\t\"STENR\": \"\",\n\t\t\t\t\"CARRIER_CONF\": \"\",\n\t\t\t\t\"MIN_COMP\": \"\",\n\t\t\t\t\"TERM_LI\": \"\",\n\t\t\t\t\"CRC_NUM\": \"\",\n\t\t\t\t\"CVP_XBLCK\": \"\",\n\t\t\t\t\"RG\": \"\",\n\t\t\t\t\"EXP\": \"\",\n\t\t\t\t\"UF\": \"\",\n\t\t\t\t\"RGDATE\": \"\",\n\t\t\t\t\"RIC\": \"\",\n\t\t\t\t\"RNE\": \"\",\n\t\t\t\t\"RNEDATE\": \"\",\n\t\t\t\t\"CNAE\": \"\",\n\t\t\t\t\"LEGALNAT\": \"\",\n\t\t\t\t\"CRTN\": \"\",\n\t\t\t\t\"ICMSTAXPAY\": \"\",\n\t\t\t\t\"INDTYP\": \"\",\n\t\t\t\t\"TDT\": \"\",\n\t\t\t\t\"COMSIZE\": \"\",\n\t\t\t\t\"DECREGPC\": \"\",\n\t\t\t\t\"J_SC_CAPITAL\": \"\",\n\t\t\t\t\"J_SC_CURRENCY\": \"\",\n\t\t\t\t\"ALC\": \"\",\n\t\t\t\t\"PMT_OFFICE\": \"\",\n\t\t\t\t\"PPA_RELEVANT\": \"\",\n\t\t\t\t\"PSOFG\": \"\",\n\t\t\t\t\"PSOIS\": \"\",\n\t\t\t\t\"PSON1\": \"\",\n\t\t\t\t\"PSON2\": \"\",\n\t\t\t\t\"PSON3\": \"\",\n\t\t\t\t\"PSOVN\": \"\",\n\t\t\t\t\"PSOTL\": \"\",\n\t\t\t\t\"PSOHS\": \"\",\n\t\t\t\t\"PSOST\": \"\",\n\t\t\t\t\"TRANSPORT_CHAIN\": \"\",\n\t\t\t\t\"STAGING_TIME\": \"\",\n\t\t\t\t\"SCHEDULING_TYPE\": \"\",\n\t\t\t\t\"SUBMI_RELEVANT\": \"\"\n\t\t\t}\n\t\t}\n\t}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://olamagri-qas.test.apimanagement.ap11.hana.ondemand.com/OA_RISE_BAPI",
+					"protocol": "https",
+					"host": [
+						"olamagri-qas",
+						"test",
+						"apimanagement",
+						"ap11",
+						"hana",
+						"ondemand",
+						"com"
+					],
+					"path": [
+						"OA_RISE_BAPI"
+					]
+				},
+				"description": "vendor bank details"
+			},
+			"response": []
+		},
+		{
+			"name": "https://olamagri-qas.test.apimanagement.ap11.hana.ondemand.com/OA_RISE_BAPI",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{access_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"ZGTFIFM_COST_CENTER_DETAILS\": {\n\t\t\"IV_BUKRS\": \"NG12\",\n\t\t\"IV_FROM_DATE\": 20240321,\n\t\t\"IV_TO_DATE\": 20250721,\n\t\t\"ET_COST_CENTER\": {\n\t\t\t\"item\": {\n\t\t\t\t\"KOSTL\": \"\",\n\t\t\t\t\"LTEXT\": \"\",\n\t\t\t\t\"BUKRS\": \"\",\n\t\t\t\t\"VERAK\": \"\",\n\t\t\t\t\"TXJCD\": \"\",\n\t\t\t\t\"GSBER\": \"\",\n\t\t\t\t\"WAERS\": \"\",\n\t\t\t\t\"PRCTR\": \"\",\n\t\t\t\t\"BKZKP\": \"\",\n\t\t\t\t\"PKZKP\": \"\",\n\t\t\t\t\"DATBI\": \"\",\n\t\t\t\t\"DATAB\": \"\"\n\t\t\t}\n\t\t},\n\t\t\"ET_RETURN\": {\n\t\t\t\"item\": {\n\t\t\t\t\"TYPE\": \"\",\n\t\t\t\t\"ID\": \"\",\n\t\t\t\t\"NUMBER\": \"\",\n\t\t\t\t\"MESSAGE\": \"\",\n\t\t\t\t\"LOG_NO\": \"\",\n\t\t\t\t\"LOG_MSG_NO\": \"\",\n\t\t\t\t\"MESSAGE_V1\": \"\",\n\t\t\t\t\"MESSAGE_V2\": \"\",\n\t\t\t\t\"MESSAGE_V3\": \"\",\n\t\t\t\t\"MESSAGE_V4\": \"\",\n\t\t\t\t\"PARAMETER\": \"\",\n\t\t\t\t\"ROW\": \"\",\n\t\t\t\t\"FIELD\": \"\",\n\t\t\t\t\"SYSTEM\": \"\"\n\t\t\t}\n\t\t}\n\t}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://olamagri-qas.test.apimanagement.ap11.hana.ondemand.com/OA_RISE_BAPI",
+					"protocol": "https",
+					"host": [
+						"olamagri-qas",
+						"test",
+						"apimanagement",
+						"ap11",
+						"hana",
+						"ondemand",
+						"com"
+					],
+					"path": [
+						"OA_RISE_BAPI"
+					]
+				},
+				"description": "cost center"
+			},
+			"response": []
+		},
+		{
+			"name": "https://olamagri-qas.test.apimanagement.ap11.hana.ondemand.com/OA_RISE_BAPI",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{access_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"BAPI_ACC_DOCUMENT_POST\": {\n\t\t\"DOCUMENTHEADER\": {\n\t\t\t\"OBJ_TYPE\": \"\",\n\t\t\t\"OBJ_KEY\": \"\",\n\t\t\t\"OBJ_SYS\": \"\",\n\t\t\t\"BUS_ACT\": \"\",\n\t\t\t\"USERNAME\": \"ROA_SPRINTAP\",\n\t\t\t\"HEADER_TXT\": \"Maintainance Charges\",\n\t\t\t\"COMP_CODE\": \"NG12\",\n\t\t\t\"DOC_DATE\": \"20250730\",\n\t\t\t\"PSTNG_DATE\": \"20250730\",\n\t\t\t\"TRANS_DATE\": \"20250730\",\n\t\t\t\"FISCAL_YEAR\": \"2025\",\n\t\t\t\"FISCAL_PERIOD\": \"07\",\n\t\t\t\"DOC_TYPE\": \"KR\",\n\t\t\t\"REF_DOC_NO\": \"0001009198\",\n\t\t\t\"AC_DOC_NO\": \"\",\n\t\t\t\"OBJ_KEY_R\": \"\",\n\t\t\t\"REASON_REV\": \"\",\n\t\t\t\"COMPO_ACC\": \"\",\n\t\t\t\"REF_DOC_NO_LONG\": \"\",\n\t\t\t\"ACC_PRINCIPLE\": \"\",\n\t\t\t\"NEG_POSTNG\": \"\",\n\t\t\t\"OBJ_KEY_INV\": \"\",\n\t\t\t\"BILL_CATEGORY\": \"\",\n\t\t\t\"VATDATE\": \"\",\n\t\t\t\"INVOICE_REC_DATE\": \"\",\n\t\t\t\"ECS_ENV\": \"\",\n\t\t\t\"PARTIAL_REV\": \"\",\n\t\t\t\"DOC_STATUS\": \"\"\n\t\t},\n\t\t\"ACCOUNTPAYABLE\": {\n\t\t\t\"item\": {\n\t\t\t\t\"ITEMNO_ACC\": \"0000000001\",\n\t\t\t\t\"VENDOR_NO\": \"0001009199\",\n\t\t\t\t\"GL_ACCOUNT\": \"\",\n\t\t\t\t\"REF_KEY_1\": \"\",\n\t\t\t\t\"REF_KEY_2\": \"\",\n\t\t\t\t\"REF_KEY_3\": \"\",\n\t\t\t\t\"COMP_CODE\": \"NG12\",\n\t\t\t\t\"BUS_AREA\": \"\",\n\t\t\t\t\"PMNTTRMS\": \"ZK30\",\n\t\t\t\t\"BLINE_DATE\": \"20250730\",\n\t\t\t\t\"DSCT_DAYS1\": \"\",\n\t\t\t\t\"DSCT_DAYS2\": \"\",\n\t\t\t\t\"NETTERMS\": \"\",\n\t\t\t\t\"DSCT_PCT1\": \"\",\n\t\t\t\t\"DSCT_PCT2\": \"\",\n\t\t\t\t\"PYMT_METH\": \"B\",\n\t\t\t\t\"PMTMTHSUPL\": \"\",\n\t\t\t\t\"PMNT_BLOCK\": \"\",\n\t\t\t\t\"SCBANK_IND\": \"\",\n\t\t\t\t\"SUPCOUNTRY\": \"\",\n\t\t\t\t\"SUPCOUNTRY_ISO\": \"\",\n\t\t\t\t\"BLLSRV_IND\": \"\",\n\t\t\t\t\"ALLOC_NMBR\": \"0001009199\",\n\t\t\t\t\"ITEM_TEXT\": \"\",\n\t\t\t\t\"PO_SUB_NO\": \"\",\n\t\t\t\t\"PO_CHECKDG\": \"\",\n\t\t\t\t\"PO_REF_NO\": \"\",\n\t\t\t\t\"W_TAX_CODE\": \"\",\n\t\t\t\t\"BUSINESSPLACE\": \"\",\n\t\t\t\t\"SECTIONCODE\": \"\",\n\t\t\t\t\"INSTR1\": \"\",\n\t\t\t\t\"INSTR2\": \"\",\n\t\t\t\t\"INSTR3\": \"\",\n\t\t\t\t\"INSTR4\": \"\",\n\t\t\t\t\"BRANCH\": \"\",\n\t\t\t\t\"PYMT_CUR_ISO\": \"\",\n\t\t\t\t\"SP_GL_IND\": \"\",\n\t\t\t\t\"TAX_CODE\": \"\",\n\t\t\t\t\"TAX_DATE\": \"\",\n\t\t\t\t\"TAXJURCODE\": \"\",\n\t\t\t\t\"ALT_PAYEE\": \"\",\n\t\t\t\t\"ALT_PAYEE_BANK\": \"\",\n\t\t\t\t\"PARTNER_BK\": \"\",\n\t\t\t\t\"BANK_ID\": \"\",\n\t\t\t\t\"PARTNER_GUID\": \"\",\n\t\t\t\t\"PROFIT_CTR\": \"NG1201\",\n\t\t\t\t\"FUND\": \"\",\n\t\t\t\t\"GRANT_NBR\": \"\",\n\t\t\t\t\"MEASURE\": \"\",\n\t\t\t\t\"HOUSEBANKACCTID\": \"\",\n\t\t\t\t\"BUDGET_PERIOD\": \"\",\n\t\t\t\t\"PPA_EX_IND\": \"\",\n\t\t\t\t\"PART_BUSINESSPLACE\": \"\"\n\t\t\t}\n\t\t},\n\t\t\"ACCOUNTGL\": {\n\t\t\t\"item\": {\n\t\t\t\t\"ITEMNO_ACC\": \"0000000002\",\n\t\t\t\t\"GL_ACCOUNT\": \"0000600003\",\n\t\t\t\t\"ITEM_TEXT\": \"OLAM INTERNATIONAL LIMITED\",\n\t\t\t\t\"STAT_CON\": \"\",\n\t\t\t\t\"LOG_PROC\": \"\",\n\t\t\t\t\"AC_DOC_NO\": \"\",\n\t\t\t\t\"REF_KEY_1\": \"\",\n\t\t\t\t\"REF_KEY_2\": \"\",\n\t\t\t\t\"REF_KEY_3\": \"\",\n\t\t\t\t\"ACCT_KEY\": \"\",\n\t\t\t\t\"ACCT_TYPE\": \"\",\n\t\t\t\t\"DOC_TYPE\": \"\",\n\t\t\t\t\"COMP_CODE\": \"NG12\",\n\t\t\t\t\"BUS_AREA\": \"\",\n\t\t\t\t\"FUNC_AREA\": \"\",\n\t\t\t\t\"PLANT\": \"\",\n\t\t\t\t\"FIS_PERIOD\": \"\",\n\t\t\t\t\"FISC_YEAR\": \"\",\n\t\t\t\t\"PSTNG_DATE\": \"\",\n\t\t\t\t\"VALUE_DATE\": \"\",\n\t\t\t\t\"FM_AREA\": \"\",\n\t\t\t\t\"CUSTOMER\": \"\",\n\t\t\t\t\"CSHDIS_IND\": \"\",\n\t\t\t\t\"VENDOR_NO\": \"\",\n\t\t\t\t\"ALLOC_NMBR\": \"\",\n\t\t\t\t\"TAXJURCODE\": \"\",\n\t\t\t\t\"EXT_OBJECT_ID\": \"\",\n\t\t\t\t\"BUS_SCENARIO\": \"\",\n\t\t\t\t\"COSTOBJECT\": \"\",\n\t\t\t\t\"COSTCENTER\": \"NG12010110\",\n\t\t\t\t\"ACTTYPE\": \"\",\n\t\t\t\t\"PROFIT_CTR\": \"NG1201\",\n\t\t\t\t\"PART_PRCTR\": \"\",\n\t\t\t\t\"NETWORK\": \"\",\n\t\t\t\t\"WBS_ELEMENT\": \"\",\n\t\t\t\t\"ORDERID\": \"\",\n\t\t\t\t\"ORDER_ITNO\": \"\",\n\t\t\t\t\"ROUTING_NO\": \"\",\n\t\t\t\t\"ACTIVITY\": \"\",\n\t\t\t\t\"COND_TYPE\": \"\",\n\t\t\t\t\"COND_COUNT\": \"\",\n\t\t\t\t\"COND_ST_NO\": \"\",\n\t\t\t\t\"FUND\": \"\",\n\t\t\t\t\"FUNDS_CTR\": \"\",\n\t\t\t\t\"CMMT_ITEM\": \"\",\n\t\t\t\t\"CO_BUSPROC\": \"\",\n\t\t\t\t\"ASSET_NO\": \"\",\n\t\t\t\t\"SUB_NUMBER\": \"\",\n\t\t\t\t\"BILL_TYPE\": \"\",\n\t\t\t\t\"SALES_ORD\": \"\",\n\t\t\t\t\"S_ORD_ITEM\": \"\",\n\t\t\t\t\"DISTR_CHAN\": \"\",\n\t\t\t\t\"DIVISION\": \"\",\n\t\t\t\t\"SALESORG\": \"\",\n\t\t\t\t\"SALES_GRP\": \"\",\n\t\t\t\t\"SALES_OFF\": \"\",\n\t\t\t\t\"SOLD_TO\": \"\",\n\t\t\t\t\"DE_CRE_IND\": \"\",\n\t\t\t\t\"P_EL_PRCTR\": \"\",\n\t\t\t\t\"XMFRW\": \"\",\n\t\t\t\t\"QUANTITY\": \"\",\n\t\t\t\t\"BASE_UOM\": \"\",\n\t\t\t\t\"BASE_UOM_ISO\": \"\",\n\t\t\t\t\"INV_QTY\": \"\",\n\t\t\t\t\"INV_QTY_SU\": \"\",\n\t\t\t\t\"SALES_UNIT\": \"\",\n\t\t\t\t\"SALES_UNIT_ISO\": \"\",\n\t\t\t\t\"PO_PR_QNT\": \"\",\n\t\t\t\t\"PO_PR_UOM\": \"\",\n\t\t\t\t\"PO_PR_UOM_ISO\": \"\",\n\t\t\t\t\"ENTRY_QNT\": \"\",\n\t\t\t\t\"ENTRY_UOM\": \"\",\n\t\t\t\t\"ENTRY_UOM_ISO\": \"\",\n\t\t\t\t\"VOLUME\": \"\",\n\t\t\t\t\"VOLUMEUNIT\": \"\",\n\t\t\t\t\"VOLUMEUNIT_ISO\": \"\",\n\t\t\t\t\"GROSS_WT\": \"\",\n\t\t\t\t\"NET_WEIGHT\": \"\",\n\t\t\t\t\"UNIT_OF_WT\": \"\",\n\t\t\t\t\"UNIT_OF_WT_ISO\": \"\",\n\t\t\t\t\"ITEM_CAT\": \"\",\n\t\t\t\t\"MATERIAL\": \"\",\n\t\t\t\t\"MATL_TYPE\": \"\",\n\t\t\t\t\"MVT_IND\": \"\",\n\t\t\t\t\"REVAL_IND\": \"\",\n\t\t\t\t\"ORIG_GROUP\": \"\",\n\t\t\t\t\"ORIG_MAT\": \"\",\n\t\t\t\t\"SERIAL_NO\": \"\",\n\t\t\t\t\"PART_ACCT\": \"\",\n\t\t\t\t\"TR_PART_BA\": \"\",\n\t\t\t\t\"TRADE_ID\": \"\",\n\t\t\t\t\"VAL_AREA\": \"\",\n\t\t\t\t\"VAL_TYPE\": \"\",\n\t\t\t\t\"ASVAL_DATE\": \"\",\n\t\t\t\t\"PO_NUMBER\": \"\",\n\t\t\t\t\"PO_ITEM\": \"\",\n\t\t\t\t\"ITM_NUMBER\": \"\",\n\t\t\t\t\"COND_CATEGORY\": \"\",\n\t\t\t\t\"FUNC_AREA_LONG\": \"\",\n\t\t\t\t\"CMMT_ITEM_LONG\": \"\",\n\t\t\t\t\"GRANT_NBR\": \"\",\n\t\t\t\t\"CS_TRANS_T\": \"\",\n\t\t\t\t\"MEASURE\": \"\",\n\t\t\t\t\"SEGMENT\": \"\",\n\t\t\t\t\"PARTNER_SEGMENT\": \"\",\n\t\t\t\t\"RES_DOC\": \"\",\n\t\t\t\t\"RES_ITEM\": \"\",\n\t\t\t\t\"BILLING_PERIOD_START_DATE\": \"\",\n\t\t\t\t\"BILLING_PERIOD_END_DATE\": \"\",\n\t\t\t\t\"PPA_EX_IND\": \"\",\n\t\t\t\t\"FASTPAY\": \"\",\n\t\t\t\t\"PARTNER_GRANT_NBR\": \"\",\n\t\t\t\t\"BUDGET_PERIOD\": \"\",\n\t\t\t\t\"PARTNER_BUDGET_PERIOD\": \"\",\n\t\t\t\t\"PARTNER_FUND\": \"\",\n\t\t\t\t\"ITEMNO_TAX\": \"\",\n\t\t\t\t\"PAYMENT_TYPE\": \"\",\n\t\t\t\t\"EXPENSE_TYPE\": \"\",\n\t\t\t\t\"PROGRAM_PROFILE\": \"\"\n\t\t\t}\n\t\t},\n\t\t\"CURRENCYAMOUNT\": {\n\t\t\t\"item\": [\n\t\t\t\t{\n\t\t\t\t\t\"ITEMNO_ACC\": \"0000000001\",\n\t\t\t\t\t\"CURR_TYPE\": \"\",\n\t\t\t\t\t\"CURRENCY\": \"NGN\",\n\t\t\t\t\t\"CURRENCY_ISO\": [\n\t\t\t\t\t\t\"\",\n\t\t\t\t\t\t\"\"\n\t\t\t\t\t],\n\t\t\t\t\t\"AMT_DOCCUR\": \"-2300000.00\",\n\t\t\t\t\t\"EXCH_RATE\": \"\",\n\t\t\t\t\t\"EXCH_RATE_V\": \"\",\n\t\t\t\t\t\"AMT_BASE\": \"\",\n\t\t\t\t\t\"DISC_BASE\": \"\",\n\t\t\t\t\t\"DISC_AMT\": \"\",\n\t\t\t\t\t\"TAX_AMT\": \"\"\n\t\t\t\t},\n\t\t\t\t{\n\t\t\t\t\t\"ITEMNO_ACC\": \"0000000002\",\n\t\t\t\t\t\"CURR_TYPE\": \"\",\n\t\t\t\t\t\"CURRENCY\": \"NGN\",\n\t\t\t\t\t\"CURRENCY_ISO\": \"\",\n\t\t\t\t\t\"AMT_DOCCUR\": \"2300000.00\",\n\t\t\t\t\t\"EXCH_RATE\": \"\",\n\t\t\t\t\t\"EXCH_RATE_V\": \"\",\n\t\t\t\t\t\"AMT_BASE\": \"\",\n\t\t\t\t\t\"DISC_BASE\": \"\",\n\t\t\t\t\t\"DISC_AMT\": \"\",\n\t\t\t\t\t\"TAX_AMT\": \"\"\n\t\t\t\t}\n\t\t\t]\n\t\t}\n\t}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://olamagri-qas.test.apimanagement.ap11.hana.ondemand.com/OA_RISE_BAPI",
+					"protocol": "https",
+					"host": [
+						"olamagri-qas",
+						"test",
+						"apimanagement",
+						"ap11",
+						"hana",
+						"ondemand",
+						"com"
+					],
+					"path": [
+						"OA_RISE_BAPI"
+					]
+				},
+				"description": "Non PO Post"
+			},
+			"response": []
+		},
+		{
+			"name": "https://olamagri-qas.test.apimanagement.ap11.hana.ondemand.com/OA_RISE_BAPI",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{access_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"ZGTFIFM_OT_INVOICE_CHECK\": {\n\t\t\"IV_BLART\": \"\",\n\t\t\"IV_BUKRS\": \"NG27\",\n\t\t\"IV_DATE\": 20250630,\n\t\t\"IV_REFERENCE\": \"7810006318\",\n\t\t\"IV_VENDOR\": \"2054874\",\n\t\t\"IV_WAERS\": \"NGN\",\n\t\t\"IV_WRBTR\": \"\",\n\t\t\"ET_RETURN\": {\n\t\t\t\"item\": {\n\t\t\t\t\"TYPE\": \"\",\n\t\t\t\t\"ID\": \"\",\n\t\t\t\t\"NUMBER\": \"\",\n\t\t\t\t\"MESSAGE\": \"\",\n\t\t\t\t\"LOG_NO\": \"\",\n\t\t\t\t\"LOG_MSG_NO\": \"\",\n\t\t\t\t\"MESSAGE_V1\": \"\",\n\t\t\t\t\"MESSAGE_V2\": \"\",\n\t\t\t\t\"MESSAGE_V3\": \"\",\n\t\t\t\t\"MESSAGE_V4\": \"\",\n\t\t\t\t\"PARAMETER\": \"\",\n\t\t\t\t\"ROW\": \"\",\n\t\t\t\t\"FIELD\": \"\",\n\t\t\t\t\"SYSTEM\": \"\"\n\t\t\t}\n\t\t}\n\t}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://olamagri-qas.test.apimanagement.ap11.hana.ondemand.com/OA_RISE_BAPI",
+					"protocol": "https",
+					"host": [
+						"olamagri-qas",
+						"test",
+						"apimanagement",
+						"ap11",
+						"hana",
+						"ondemand",
+						"com"
+					],
+					"path": [
+						"OA_RISE_BAPI"
+					]
+				},
+				"description": "duplicate check"
+			},
+			"response": []
+		},
+		{
+			"name": "https://olamagri-qas.test.apimanagement.ap11.hana.ondemand.com/OA_RISE_BAPI",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"const tokenUrl = \"https://olamagri-qas.test.apimanagement.ap11.hana.ondemand.com/oauth/token\"",
+							"try {",
+							"    const response = await pm.sendRequest({",
+							"    url: \"https://postman-echo.com/get\",",
+							"    method: \"GET\"",
+							"    });",
+							"",
+							"    console.log(response.json());",
+							"} catch (err) {",
+							"    console.error(err);",
+							"}",
+							"try {",
+							"    const response = await pm.sendRequest({",
+							"    url: \"https://postman-echo.com/get\",",
+							"    method: \"GET\"",
+							"    });",
+							"",
+							"    console.log(response.json());",
+							"} catch (err) {",
+							"    console.error(err);",
+							"}",
+							"try {",
+							"    const response = await pm.sendRequest({",
+							"    url: \"https://postman-echo.com/get\",",
+							"    method: \"GET\"",
+							"    });",
+							"",
+							"    console.log(response.json());",
+							"} catch (err) {",
+							"    console.error(err);",
+							"}",
+							"try {",
+							"    const response = await pm.sendRequest({",
+							"    url: \"https://postman-echo.com/get\",",
+							"    method: \"GET\"",
+							"    });",
+							"",
+							"    console.log(response.json());",
+							"} catch (err) {",
+							"    console.error(err);",
+							"}",
+							"const clientId = \"ng9LLOW6tjdKPy9tXSUatMQixdhsWSMK\"",
+							"const clientSecret = \"gZPQzJwJph8IvOyd\"",
+							"// Optional: Only fetch if token missing or expired",
+							"let tokenNeeded = !pm.environment.get(\"access_token\");",
+							"// Add expiry checks as needed",
+							"",
+							"if (tokenNeeded) {",
+							"    const body = `grant_type=client_credentials&client_id=${encodeURIComponent(clientId)}&client_secret=${encodeURIComponent(clientSecret)}`;",
+							"    pm.sendRequest({",
+							"        url: tokenUrl,",
+							"        method: 'POST',",
+							"        header: {",
+							"            'Content-Type': 'application/x-www-form-urlencoded'",
+							"        },",
+							"        body: {",
+							"            mode: 'urlencoded',",
+							"            urlencoded: [",
+							"                { key: 'grant_type', value: 'client_credentials' },",
+							"                { key: 'client_id', value: clientId },",
+							"                { key: 'client_secret', value: clientSecret }",
+							"            ]",
+							"        }",
+							"    }, function (err, res) {",
+							"        if (err) {",
+							"            console.log('Token fetch error:', err);",
+							"            return;",
+							"        }",
+							"        const data = res.json();",
+							"        // Adjust 'access_token' if your response uses a different key",
+							"        if (data.access_token) {",
+							"            pm.environment.set('access_token', data.access_token);",
+							"        } else {",
+							"            console.error('Token response invalid:', data);",
+							"        }",
+							"    });",
+							"}",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{access_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\n{\n    \"BAPI_GOODSMVT_GETDETAIL\": {\n        \"MATDOCUMENTYEAR\": \"2025\",\n        \"MATERIALDOCUMENT\": \"5020263510\",\n        \"GOODSMVT_ITEMS\": {\n            \"item\": {\n                \"MAT_DOC\": \"\",\n                \"DOC_YEAR\": \"\",\n                \"MATDOC_ITM\": \"\",\n                \"MATERIAL\": \"\",\n                \"PLANT\": \"\",\n                \"STGE_LOC\": \"\",\n                \"BATCH\": \"\",\n                \"MOVE_TYPE\": \"\",\n                \"STCK_TYPE\": \"\",\n                \"SPEC_STOCK\": \"\",\n                \"VENDOR\": \"\",\n                \"CUSTOMER\": \"\",\n                \"SALES_ORD\": \"\",\n                \"S_ORD_ITEM\": \"\",\n                \"SCHED_LINE\": \"\",\n                \"VAL_TYPE\": \"\",\n                \"ENTRY_QNT\": \"\",\n                \"ENTRY_UOM\": \"\",\n                \"ENTRY_UOM_ISO\": \"\",\n                \"PO_PR_QNT\": \"\",\n                \"ORDERPR_UN\": \"\",\n                \"ORDERPR_UN_ISO\": \"\",\n                \"PO_NUMBER\": \"\",\n                \"PO_ITEM\": \"\",\n                \"SHIPPING\": \"\",\n                \"COMP_SHIP\": \"\",\n                \"NO_MORE_GR\": \"\",\n                \"ITEM_TEXT\": \"\",\n                \"GR_RCPT\": \"\",\n                \"UNLOAD_PT\": \"\",\n                \"COSTCENTER\": \"\",\n                \"ORDERID\": \"\",\n                \"ORDER_ITNO\": \"\",\n                \"CALC_MOTIVE\": \"\",\n                \"ASSET_NO\": \"\",\n                \"SUB_NUMBER\": \"\",\n                \"RESERV_NO\": \"\",\n                \"RES_ITEM\": \"\",\n                \"RES_TYPE\": \"\",\n                \"WITHDRAWN\": \"\",\n                \"MOVE_MAT\": \"\",\n                \"MOVE_PLANT\": \"\",\n                \"MOVE_STLOC\": \"\",\n                \"MOVE_BATCH\": \"\",\n                \"MOVE_VAL_TYPE\": \"\",\n                \"MVT_IND\": \"\",\n                \"MOVE_REAS\": \"\",\n                \"RL_EST_KEY\": \"\",\n                \"REF_DATE\": \"\",\n                \"COST_OBJ\": \"\",\n                \"PROFIT_SEGM_NO\": \"\",\n                \"PROFIT_CTR\": \"\",\n                \"WBS_ELEM\": \"\",\n                \"NETWORK\": \"\",\n                \"ACTIVITY\": \"\",\n                \"PART_ACCT\": \"\",\n                \"AMOUNT_LC\": \"\",\n                \"AMOUNT_SV\": \"\",\n                \"CURRENCY\": \"\",\n                \"CURRENCY_ISO\": \"\",\n                \"REF_DOC_YR\": \"\",\n                \"REF_DOC\": \"\",\n                \"REF_DOC_IT\": \"\",\n                \"EXPIRYDATE\": \"\",\n                \"PROD_DATE\": \"\",\n                \"FUND\": \"\",\n                \"FUNDS_CTR\": \"\",\n                \"CMMT_ITEM\": \"\",\n                \"VAL_SALES_ORD\": \"\",\n                \"VAL_S_ORD_ITEM\": \"\",\n                \"VAL_WBS_ELEM\": \"\",\n                \"CO_BUSPROC\": \"\",\n                \"ACTTYPE\": \"\",\n                \"SUPPL_VEND\": \"\",\n                \"X_AUTO_CRE\": \"\",\n                \"MATERIAL_EXTERNAL\": \"\",\n                \"MATERIAL_GUID\": \"\",\n                \"MATERIAL_VERSION\": \"\",\n                \"MOVE_MAT_EXTERNAL\": \"\",\n                \"MOVE_MAT_GUID\": \"\",\n                \"MOVE_MAT_VERSION\": \"\",\n                \"GRANT_NBR\": \"\",\n                \"CMMT_ITEM_LONG\": \"\",\n                \"FUNC_AREA_LONG\": \"\",\n                \"LINE_ID\": \"\",\n                \"PARENT_ID\": \"\",\n                \"LINE_DEPTH\": \"\",\n                \"BUDGET_PERIOD\": \"\",\n                \"EARMARKED_NUMBER\": \"\",\n                \"EARMARKED_ITEM\": \"\",\n                \"STK_SEGMENT\": \"\"\n            }\n        },\n        \"RETURN\": {\n            \"item\": {\n                \"TYPE\": \"\",\n                \"ID\": \"\",\n                \"NUMBER\": \"\",\n                \"MESSAGE\": \"\",\n                \"LOG_NO\": \"\",\n                \"LOG_MSG_NO\": \"\",\n                \"MESSAGE_V1\": \"\",\n                \"MESSAGE_V2\": \"\",\n                \"MESSAGE_V3\": \"\",\n                \"MESSAGE_V4\": \"\",\n                \"PARAMETER\": \"\",\n                \"ROW\": \"\",\n                \"FIELD\": \"\",\n                \"SYSTEM\": \"\"\n            }\n        }\n    }\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://olamagri-qas.test.apimanagement.ap11.hana.ondemand.com/OA_RISE_BAPI",
+					"protocol": "https",
+					"host": [
+						"olamagri-qas",
+						"test",
+						"apimanagement",
+						"ap11",
+						"hana",
+						"ondemand",
+						"com"
+					],
+					"path": [
+						"OA_RISE_BAPI"
+					]
+				},
+				"description": "GRN details"
+			},
+			"response": []
+		},
+		{
+			"name": "https://olamagri-qas.test.apimanagement.ap11.hana.ondemand.com/OA_RISE_BAPI",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{access_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"ZGTFIFM_MRM_SRM_INV_SIMULATE\": {\n   \"IS_HEADERDATA\": {\n   \"INVOICE_IND\": \"X\",\n   \"DOC_TYPE\": \"RE\",\n   \"DOC_DATE\": \"20250801\",\n   \"PSTNG_DATE\": \"20250805\",\n   \"REF_DOC_NO\": \"6979024837\",\n   \"COMP_CODE\": \"NG12\",\n   \"DIFF_INV\": \"\",\n   \"CURRENCY\": \"NGN\",\n   \"CURRENCY_ISO\": \"NGN\",\n   \"EXCH_RATE\": \"\",\n   \"EXCH_RATE_V\": \"\",\n   \"GROSS_AMOUNT\": \"1200.0000\",\n   \"CALC_TAX_IND\": \"\",\n   \"PMNTTRMS\": \"0001\",\n   \"BLINE_DATE\": \"20250804\",\n   \"DSCT_DAYS1\": \"\",\n   \"DSCT_DAYS2\": \"\",\n   \"NETTERMS\": \"\",\n   \"DSCT_PCT1\": \"\",\n   \"DSCT_PCT2\": \"\",\n   \"IV_CATEGORY\": \"\",\n   \"HEADER_TXT\": \"Test Invoice\",\n   \"PMNT_BLOCK\": \"\",\n   \"DEL_COSTS\": \"\",\n   \"DEL_COSTS_TAXC\": \"\",\n   \"DEL_COSTS_TAXJ\": \"\",\n   \"PERSON_EXT\": \"ROA_SPRINTAP\",\n   \"PYMT_METH\": \"\",\n   \"PMTMTHSUPL\": \"\",\n   \"INV_DOC_NO\": \"\",\n   \"SCBANK_IND\": \"\",\n   \"SUPCOUNTRY\": \"\",\n   \"BLLSRV_IND\": \"\",\n   \"REF_DOC_NO_LONG\": \"\",\n   \"DSCT_AMOUNT\": \"\",\n   \"PO_SUB_NO\": \"\",\n   \"PO_CHECKDG\": \"\",\n   \"PO_REF_NO\": \"\",\n   \"PAYEE_PAYER\": \"\",\n   \"PARTNER_BK\": \"\",\n   \"HOUSEBANKID\": \"\",\n   \"ALLOC_NMBR\": \"\",\n   \"PAYMT_REF\": \"\",\n   \"INV_REF_NO\": \"\",\n   \"INV_YEAR\": \"2025\",\n   \"INV_REC_DATE\": \"\",\n   \"PLANNING_LEVEL\": \"\",\n   \"PLANNING_DATE\": \"\",\n   \"FIXEDTERMS\": \"\",\n   \"BUS_AREA\": \"6235\",\n   \"LOT_NUMBER\": \"\",\n   \"ITEM_TEXT\": \"Test\",\n   \"J_1BNFTYPE\": \"\",\n   \"EU_TRIANG_DEAL\": \"\",\n   \"REPCOUNTRY\": \"\",\n   \"VAT_REG_NO\": \"\",\n   \"BUSINESS_PLACE\": \"\",\n   \"TAX_EXCH_RATE\": \"\",\n   \"GOODS_AFFECTED\": \"\",\n   \"RET_DUE_PROP\": \"\",\n   \"DELIV_POSTING\": \"\",\n   \"RETURN_POSTING\": \"\",\n   \"INV_TRAN\": \"\",\n   \"SIMULATION\": \"\",\n   \"DE_CRE_IND\": \"H\"\n  },\n  \"IV_IGM\": \"\",\n  \"IV_REF\": \"6979024839\",\n  \"IV_URL\": \"\",\n  \"IV_URLDES\": \"\",\n  \n  \"T_EXTENSIONIN\": {\n   \"item\": {\n    \"STRUCTURE\": \"\",\n    \"VALUEPART1\": \"\",\n    \"VALUEPART2\": \"\",\n    \"VALUEPART3\": \"\",\n    \"VALUEPART4\": \"\"\n   }\n  },\n  \n  \"T_ITEMDATA\": {\n   \"item\": {\n    \"INVOICE_DOC_ITEM\": \"1\",\n    \"PO_NUMBER\": \"4000224899\",\n    \"PO_ITEM\": \"00001\",\n    \"REF_DOC\": \"5020262119\",\n    \"REF_DOC_YEAR\": \"2025\",\n    \"REF_DOC_IT\": \"00001\",\n    \"DE_CRE_IND\": \"\",\n    \"TAX_CODE\": \"V0\",\n    \"TAXJURCODE\": \"\",\n    \"ITEM_AMOUNT\": \"1200.0000\",\n    \"QUANTITY\": \"1.000\",\n    \"PO_UNIT\": \"KG\",\n    \"PO_UNIT_ISO\": \"KGM\",\n    \"PO_PR_QNT\": \"\",\n    \"PO_PR_UOM\": \"\",\n    \"PO_PR_UOM_ISO\": \"\",\n    \"COND_TYPE\": \"\",\n    \"COND_ST_NO\": \"\",\n    \"COND_COUNT\": \"\",\n    \"SHEET_NO\": \"\",\n    \"ITEM_TEXT\": \"Test\",\n    \"FINAL_INV\": \"\",\n    \"SHEET_ITEM\": \"\",\n    \"GRIR_CLEAR_SRV\": \"\",\n    \"FREIGHT_VEN\": \"\",\n    \"CSHDIS_IND\": \"\",\n    \"RETENTION_DOCU_CURRENCY\": \"\",\n    \"RETENTION_PERCENTAGE\": \"\",\n    \"RETENTION_DUE_DATE\": \"\",\n    \"NO_RETENTION\": \"\",\n    \"VALUATION_TYPE\": \"\",\n    \"INV_RELATION\": \"\",\n    \"INV_ITM_ORIGIN\": \"\"\n   }\n  },\n \n  \"T_TAXDATA\": {\n   \"item\": {\n    \"TAX_CODE\": \"V0\",\n    \"TAX_AMOUNT\": \"\",\n    \"TAX_BASE_AMOUNT\": \"\",\n    \"COND_TYPE\": \"\",\n    \"TAXJURCODE\": \"\",\n    \"TAXJURCODE_DEEP\": \"\",\n    \"ITEMNO_TAX\": \"\"\n   }\n  },\n  \"T_VENDORITEMSPLITDATA\": {\n   \"item\": {\n    \"SPLIT_KEY\": \"\",\n    \"SPLIT_AMOUNT\": \"\",\n    \"PYMT_METH\": \"\",\n    \"TAX_CODE\": \"V0\",\n    \"PMTMTHSUPL\": \"\",\n    \"PMNTTRMS\": \"\"\n   }\n  },\n  \"T_WITHTAXDATA\": {\n   \"item\": {\n    \"SPLIT_KEY\": \"\",\n    \"WI_TAX_TYPE\": \"\",\n    \"WI_TAX_CODE\": \"\",\n    \"WI_TAX_BASE\": \"\",\n    \"WI_TAX_AMT\": \"\",\n    \"WI_TAX_WITHHELD_AMT\": \"\"\n   }\n  }\n }\n}\n\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://olamagri-qas.test.apimanagement.ap11.hana.ondemand.com/OA_RISE_BAPI",
+					"protocol": "https",
+					"host": [
+						"olamagri-qas",
+						"test",
+						"apimanagement",
+						"ap11",
+						"hana",
+						"ondemand",
+						"com"
+					],
+					"path": [
+						"OA_RISE_BAPI"
+					]
+				},
+				"description": "PO invoice simulate"
+			},
+			"response": []
+		},
+		{
+			"name": "https://olamagri-qas.test.apimanagement.ap11.hana.ondemand.com/OA_RISE_BAPI",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{access_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"ZGTFIFM_F47_POSTING\": {\n\t\t\"IS_INPUT\": {\n\t\t\t\"COMP_CODE\": \"NG27\",\n\t\t\t\"DOC_DATE\": \"20250801\",\n\t\t\t\"PSTNG_DATE\": \"20250819\",\n\t\t\t\"DOC_TYPE\": \"KA\",\n\t\t\t\"REF_DOC_NO\": \"67667677\",\n\t\t\t\"VENDOR_NO\": \"NG_RUYATSC\",\n\t\t\t\"BUS_AREA\": \"6218\",\n\t\t\t\"ITEM_TEXT\": \"Test Adv\",\n\t\t\t\"TRG_SP_GL_IND\": \"A\",\n\t\t\t\"PROFIT_CTR\": \"NG2701\",\n\t\t\t\"CURRENCY\": \"NGN\",\n\t\t\t\"AMOUNT\": \"1000.00\",\n\t\t\t\"PURCH_ORD\": \"7810009014\",\n\t\t\t\"PURCH_ORD_ITEM\": \"0001\",\n\t\t\t\"HEADER_TXT\": \"Test item\"\n\t\t},\n\t\t\"T_RETURN\": {\n\t\t\t\"item\": {\n\t\t\t\t\"TYPE\": \"\",\n\t\t\t\t\"ID\": \"\",\n\t\t\t\t\"NUMBER\": \"\",\n\t\t\t\t\"MESSAGE\": \"\",\n\t\t\t\t\"LOG_NO\": \"\",\n\t\t\t\t\"LOG_MSG_NO\": \"\",\n\t\t\t\t\"MESSAGE_V1\": \"\",\n\t\t\t\t\"MESSAGE_V2\": \"\",\n\t\t\t\t\"MESSAGE_V3\": \"\",\n\t\t\t\t\"MESSAGE_V4\": \"\",\n\t\t\t\t\"PARAMETER\": \"\",\n\t\t\t\t\"ROW\": \"\",\n\t\t\t\t\"FIELD\": \"\",\n\t\t\t\t\"SYSTEM\": \"\"\n\t\t\t}\n\t\t\n\t\t}\n\t}\n}"
+				},
+				"url": {
+					"raw": "https://olamagri-qas.test.apimanagement.ap11.hana.ondemand.com/OA_RISE_BAPI",
+					"protocol": "https",
+					"host": [
+						"olamagri-qas",
+						"test",
+						"apimanagement",
+						"ap11",
+						"hana",
+						"ondemand",
+						"com"
+					],
+					"path": [
+						"OA_RISE_BAPI"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://olamagri-qas.test.apimanagement.ap11.hana.ondemand.com/OA_RISE_BAPI",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{access_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"ZGTFIFM_F48_POST\": {\n\t\t\"IM_HEADER\": {\n\t\t\t\"COMP_CODE\": \"NG12\",\n\t\t\t\"DOC_DATE\": \"20250802\",\n\t\t\t\"PSTNG_DATE\": \"20250819\",\n\t\t\t\"DOC_TYPE\": \"KZ\",\n\t\t\t\"FIS_PERIOD\": \"08\",\n\t\t\t\"REF_DOC_NO\": \"78678678\",\n\t\t\t\"HEADER_TXT\": \"Test Test Test Test Test\",\n\t\t\t\"CURRENCY\": \"USD\"\n\t\t},\n\t\t\"TT_BANK_ITEM\": {\n\t\t\t\"item\": {\n\t\t\t\t\"GL_ACCOUNT\": \"350322\",\n\t\t\t\t\"BUS_AREA\": \"6235\",\n\t\t\t\t\"VALUE_DATE\": \"20250819\",\n\t\t\t\t\"PROFIT_CTR\": \"NG1201\",\n\t\t\t\t\"AMT_DOCCUR\": \"1000.00\"\n\t\t\t}\n\t\t},\n\t\t\"TT_CLEARDOCS\": {\n\t\t\t\"item\": {\n\t\t\t\t\"BELNR\": \"\",\n\t\t\t\t\"BUKRS\": \"\",\n\t\t\t\t\"GJAHR\": \"\",\n\t\t\t\t\"BUZEI\": \"\",\n\t\t\t\t\"AUGBL\": \"\",\n\t\t\t\t\"AUGDT\": \"\"\n\t\t\t}\n\t\t},\n\t\t\"TT_RETURN\": {\n\t\t\t\"item\": {\n\t\t\t\t\"TYPE\": \"\",\n\t\t\t\t\"ID\": \"\",\n\t\t\t\t\"NUMB\": \"\",\n\t\t\t\t\"MESSAGE\": \"\"\n\t\t\t}\n\t\t},\n\t\t\"TT_VENDOR_ITEM\": {\n\t\t\t\"item\": {\n\t\t\t\t\"VENDOR_NO\": \"0001611953\",\n\t\t\t\t\"BUS_AREA\": \"\",\n\t\t\t\t\"PYMT_METH\": \"\",\n\t\t\t\t\"ITEM_TEXT\": \"Test\",\n\t\t\t\t\"W_TAX_CODE\": \"\",\n\t\t\t\t\"TAX_CODE\": \"\",\n\t\t\t\t\"PROFIT_CTR\": \"\",\n\t\t\t\t\"PO_NUMBER\": \"\",\n\t\t\t\t\"PO_ITEM\": \"\",\n\t\t\t\t\"SP_GL_IND\": \"\",\n\t\t\t\t\"AMT_DOCCUR\": \"1000.00\",\n\t\t\t\t\"ALLOC_NMBR\": \"\"\n\t\t\t}\n\t\t}\n\t}\n}"
+				},
+				"url": {
+					"raw": "https://olamagri-qas.test.apimanagement.ap11.hana.ondemand.com/OA_RISE_BAPI",
+					"protocol": "https",
+					"host": [
+						"olamagri-qas",
+						"test",
+						"apimanagement",
+						"ap11",
+						"hana",
+						"ondemand",
+						"com"
+					],
+					"path": [
+						"OA_RISE_BAPI"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://olamagri-qas.test.apimanagement.ap11.hana.ondemand.com/OA_RISE_BAPI",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{access_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"ZSGBFIFM_VENDORBANK_ECM\": {\n\t\t\"LV_BUKRS\": \"NG12\",\n\t\t\"LT_ECM_OUTPUT\": {\n\t\t\t\"item\": {\n\t\t\t\t\"NAME\": \"\",\n\t\t\t\t\"KTOKK\": \"\",\n\t\t\t\t\"KUNNR\": \"\",\n\t\t\t\t\"VBUND\": \"\",\n\t\t\t\t\"AKONT\": \"\",\n\t\t\t\t\"ZUAWA\": \"\",\n\t\t\t\t\"ZWELS\": \"\",\n\t\t\t\t\"HBKID\": \"\",\n\t\t\t\t\"ALTKN\": \"\",\n\t\t\t\t\"BUKRS\": \"\",\n\t\t\t\t\"LIFNR\": \"\",\n\t\t\t\t\"BANKS\": \"\",\n\t\t\t\t\"BANKL\": \"\",\n\t\t\t\t\"BANKACCOUNT\": \"\",\n\t\t\t\t\"BKONT\": \"\",\n\t\t\t\t\"BVTYP\": \"\",\n\t\t\t\t\"KOINH\": \"\",\n\t\t\t\t\"IBAN\": \"\",\n\t\t\t\t\"VALID_FROM\": \"\",\n\t\t\t\t\"BANKA\": \"\",\n\t\t\t\t\"STRAS\": \"\",\n\t\t\t\t\"SWIFT\": \"\",\n\t\t\t\t\"BANKSREC\": \"\",\n\t\t\t\t\"BANKKREC\": \"\",\n\t\t\t\t\"BANKNREC\": \"\",\n\t\t\t\t\"WAERS\": \"\",\n\t\t\t\t\"CHAINBANKT\": \"\",\n\t\t\t\t\"CHAINBANKS_01\": \"\",\n\t\t\t\t\"CHAINBANKK_01\": \"\",\n\t\t\t\t\"CHAINBANKN_01\": \"\",\n\t\t\t\t\"IBAN_01\": \"\",\n\t\t\t\t\"SWIFT_01\": \"\",\n\t\t\t\t\"BANKA_01\": \"\",\n\t\t\t\t\"STRAS_01\": \"\",\n\t\t\t\t\"CHAINBANKS_02\": \"\",\n\t\t\t\t\"CHAINBANKK_02\": \"\",\n\t\t\t\t\"CHAINBANKN_02\": \"\",\n\t\t\t\t\"IBAN_02\": \"\",\n\t\t\t\t\"SWIFT_02\": \"\",\n\t\t\t\t\"BANKA_02\": \"\",\n\t\t\t\t\"STRAS_02\": \"\",\n\t\t\t\t\"CHAINBANKS_03\": \"\",\n\t\t\t\t\"CHAINBANKK_03\": \"\",\n\t\t\t\t\"CHAINBANKN_03\": \"\",\n\t\t\t\t\"IBAN_03\": \"\",\n\t\t\t\t\"SWIFT_03\": \"\",\n\t\t\t\t\"BANKA_03\": \"\",\n\t\t\t\t\"STRAS_03\": \"\",\n\t\t\t\t\"PROVZ\": \"\",\n\t\t\t\t\"BNKLZ\": \"\",\n\t\t\t\t\"ORT01\": \"\",\n\t\t\t\t\"BRNCH\": \"\"\n\t\t\t}\n\t\t},\n\t\t\"LT_RETURN\": {\n\t\t\t\"item\": {\n\t\t\t\t\"TYPE\": \"\",\n\t\t\t\t\"ID\": \"\",\n\t\t\t\t\"NUMBER\": \"\",\n\t\t\t\t\"MESSAGE\": \"\",\n\t\t\t\t\"LOG_NO\": \"\",\n\t\t\t\t\"LOG_MSG_NO\": \"\",\n\t\t\t\t\"MESSAGE_V1\": \"\",\n\t\t\t\t\"MESSAGE_V2\": \"\",\n\t\t\t\t\"MESSAGE_V3\": \"\",\n\t\t\t\t\"MESSAGE_V4\": \"\",\n\t\t\t\t\"PARAMETER\": \"\",\n\t\t\t\t\"ROW\": \"\",\n\t\t\t\t\"FIELD\": \"\",\n\t\t\t\t\"SYSTEM\": \"\"\n\t\t\t}\n\t\t},\n\t\t\"LT_VENDOR_INPUT\": {\n\t\t\t\"item\": {\n\t\t\t\t\"MANDT\": \"\",\n\t\t\t\t\"LIFNR\": \"0001611953\",\n\t\t\t\t\"LAND1\": \"\",\n\t\t\t\t\"NAME1\": \"\",\n\t\t\t\t\"NAME2\": \"\",\n\t\t\t\t\"NAME3\": \"\",\n\t\t\t\t\"NAME4\": \"\",\n\t\t\t\t\"ORT01\": \"\",\n\t\t\t\t\"ORT02\": \"\",\n\t\t\t\t\"PFACH\": \"\",\n\t\t\t\t\"PSTL2\": \"\",\n\t\t\t\t\"PSTLZ\": \"\",\n\t\t\t\t\"REGIO\": \"\",\n\t\t\t\t\"SORTL\": \"\",\n\t\t\t\t\"STRAS\": \"\",\n\t\t\t\t\"ADRNR\": \"\",\n\t\t\t\t\"MCOD1\": \"\",\n\t\t\t\t\"MCOD2\": \"\",\n\t\t\t\t\"MCOD3\": \"\",\n\t\t\t\t\"ANRED\": \"\",\n\t\t\t\t\"BAHNS\": \"\",\n\t\t\t\t\"BBBNR\": \"\",\n\t\t\t\t\"BBSNR\": \"\",\n\t\t\t\t\"BEGRU\": \"\",\n\t\t\t\t\"BRSCH\": \"\",\n\t\t\t\t\"BUBKZ\": \"\",\n\t\t\t\t\"DATLT\": \"\",\n\t\t\t\t\"DTAMS\": \"\",\n\t\t\t\t\"DTAWS\": \"\",\n\t\t\t\t\"ERDAT\": \"\",\n\t\t\t\t\"ERNAM\": \"\",\n\t\t\t\t\"ESRNR\": \"\",\n\t\t\t\t\"KONZS\": \"\",\n\t\t\t\t\"KTOKK\": \"\",\n\t\t\t\t\"KUNNR\": \"\",\n\t\t\t\t\"LNRZA\": \"\",\n\t\t\t\t\"LOEVM\": \"\",\n\t\t\t\t\"SPERR\": \"\",\n\t\t\t\t\"SPERM\": \"\",\n\t\t\t\t\"SPRAS\": \"\",\n\t\t\t\t\"STCD1\": \"\",\n\t\t\t\t\"STCD2\": \"\",\n\t\t\t\t\"STKZA\": \"\",\n\t\t\t\t\"STKZU\": \"\",\n\t\t\t\t\"TELBX\": \"\",\n\t\t\t\t\"TELF1\": \"\",\n\t\t\t\t\"TELF2\": \"\",\n\t\t\t\t\"TELFX\": \"\",\n\t\t\t\t\"TELTX\": \"\",\n\t\t\t\t\"TELX1\": \"\",\n\t\t\t\t\"XCPDK\": \"\",\n\t\t\t\t\"XZEMP\": \"\",\n\t\t\t\t\"VBUND\": \"\",\n\t\t\t\t\"FISKN\": \"\",\n\t\t\t\t\"STCEG\": \"\",\n\t\t\t\t\"STKZN\": \"\",\n\t\t\t\t\"SPERQ\": \"\",\n\t\t\t\t\"GBORT\": \"\",\n\t\t\t\t\"GBDAT\": \"\",\n\t\t\t\t\"SEXKZ\": \"\",\n\t\t\t\t\"KRAUS\": \"\",\n\t\t\t\t\"REVDB\": \"\",\n\t\t\t\t\"QSSYS\": \"\",\n\t\t\t\t\"KTOCK\": \"\",\n\t\t\t\t\"PFORT\": \"\",\n\t\t\t\t\"WERKS\": \"\",\n\t\t\t\t\"LTSNA\": \"\",\n\t\t\t\t\"WERKR\": \"\",\n\t\t\t\t\"PLKAL\": \"\",\n\t\t\t\t\"DUEFL\": \"\",\n\t\t\t\t\"TXJCD\": \"\",\n\t\t\t\t\"SPERZ\": \"\",\n\t\t\t\t\"SCACD\": \"\",\n\t\t\t\t\"SFRGR\": \"\",\n\t\t\t\t\"LZONE\": \"\",\n\t\t\t\t\"XLFZA\": \"\",\n\t\t\t\t\"DLGRP\": \"\",\n\t\t\t\t\"FITYP\": \"\",\n\t\t\t\t\"STCDT\": \"\",\n\t\t\t\t\"REGSS\": \"\",\n\t\t\t\t\"ACTSS\": \"\",\n\t\t\t\t\"STCD3\": \"\",\n\t\t\t\t\"STCD4\": \"\",\n\t\t\t\t\"STCD5\": \"\",\n\t\t\t\t\"STCD6\": \"\",\n\t\t\t\t\"IPISP\": \"\",\n\t\t\t\t\"TAXBS\": \"\",\n\t\t\t\t\"PROFS\": \"\",\n\t\t\t\t\"STGDL\": \"\",\n\t\t\t\t\"EMNFR\": \"\",\n\t\t\t\t\"LFURL\": \"\",\n\t\t\t\t\"J_1KFREPRE\": \"\",\n\t\t\t\t\"J_1KFTBUS\": \"\",\n\t\t\t\t\"J_1KFTIND\": \"\",\n\t\t\t\t\"CONFS\": \"\",\n\t\t\t\t\"UPDAT\": \"\",\n\t\t\t\t\"UPTIM\": \"\",\n\t\t\t\t\"NODEL\": \"\",\n\t\t\t\t\"QSSYSDAT\": \"\",\n\t\t\t\t\"PODKZB\": \"\",\n\t\t\t\t\"FISKU\": \"\",\n\t\t\t\t\"STENR\": \"\",\n\t\t\t\t\"CARRIER_CONF\": \"\",\n\t\t\t\t\"MIN_COMP\": \"\",\n\t\t\t\t\"TERM_LI\": \"\",\n\t\t\t\t\"CRC_NUM\": \"\",\n\t\t\t\t\"CVP_XBLCK\": \"\",\n\t\t\t\t\"RG\": \"\",\n\t\t\t\t\"EXP\": \"\",\n\t\t\t\t\"UF\": \"\",\n\t\t\t\t\"RGDATE\": \"\",\n\t\t\t\t\"RIC\": \"\",\n\t\t\t\t\"RNE\": \"\",\n\t\t\t\t\"RNEDATE\": \"\",\n\t\t\t\t\"CNAE\": \"\",\n\t\t\t\t\"LEGALNAT\": \"\",\n\t\t\t\t\"CRTN\": \"\",\n\t\t\t\t\"ICMSTAXPAY\": \"\",\n\t\t\t\t\"INDTYP\": \"\",\n\t\t\t\t\"TDT\": \"\",\n\t\t\t\t\"COMSIZE\": \"\",\n\t\t\t\t\"DECREGPC\": \"\",\n\t\t\t\t\"J_SC_CAPITAL\": \"\",\n\t\t\t\t\"J_SC_CURRENCY\": \"\",\n\t\t\t\t\"ALC\": \"\",\n\t\t\t\t\"PMT_OFFICE\": \"\",\n\t\t\t\t\"PPA_RELEVANT\": \"\",\n\t\t\t\t\"PSOFG\": \"\",\n\t\t\t\t\"PSOIS\": \"\",\n\t\t\t\t\"PSON1\": \"\",\n\t\t\t\t\"PSON2\": \"\",\n\t\t\t\t\"PSON3\": \"\",\n\t\t\t\t\"PSOVN\": \"\",\n\t\t\t\t\"PSOTL\": \"\",\n\t\t\t\t\"PSOHS\": \"\",\n\t\t\t\t\"PSOST\": \"\",\n\t\t\t\t\"TRANSPORT_CHAIN\": \"\",\n\t\t\t\t\"STAGING_TIME\": \"\",\n\t\t\t\t\"SCHEDULING_TYPE\": \"\",\n\t\t\t\t\"SUBMI_RELEVANT\": \"\"\n\t\t\t}\n\t\t}\n\t}\n}"
+				},
+				"url": {
+					"raw": "https://olamagri-qas.test.apimanagement.ap11.hana.ondemand.com/OA_RISE_BAPI",
+					"protocol": "https",
+					"host": [
+						"olamagri-qas",
+						"test",
+						"apimanagement",
+						"ap11",
+						"hana",
+						"ondemand",
+						"com"
+					],
+					"path": [
+						"OA_RISE_BAPI"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://olamagri-qas.test.apimanagement.ap11.hana.ondemand.com/OA_RISE_BAPI",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"// Get current token and expiry",
+							"var currentToken = pm.collectionVariables.get(\"access_token\");",
+							"var tokenExpiry = pm.collectionVariables.get(\"token_expiry\");",
+							"var currentTime = new Date().getTime();",
+							" ",
+							"// Check if we need to get a new token (no token OR token expired)",
+							"if (!currentToken || currentTime >= tokenExpiry) {",
+							"    console.log(\"Token missing or expired, getting new token...\");",
+							"    ",
+							"    pm.sendRequest({",
+							"        url: pm.environment.get(\"auth_url\"),",
+							"        method: 'POST',",
+							"        header: {",
+							"            'Content-Type': 'application/x-www-form-urlencoded'",
+							"        },",
+							"        body: {",
+							"            mode: 'urlencoded',",
+							"            urlencoded: [",
+							"                {key: 'grant_type', value: 'client_credentials'},",
+							"                {key: 'client_id', value: pm.environment.get(\"client_id\")},",
+							"                {key: 'client_secret', value: pm.environment.get(\"client_secret\")}",
+							"            ]",
+							"        }",
+							"    }, function (err, response) {",
+							"        if (err) {",
+							"            console.log('Error getting token:', err);",
+							"        } else {",
+							"            var jsonData = response.json();",
+							"            var newToken = jsonData.access_token;",
+							"            var expiresIn = jsonData.expires_in;",
+							"            var issuedAt = parseInt(jsonData.issued_at);",
+							"            var expiryTime = issuedAt + (expiresIn * 1000);",
+							"            ",
+							"            // Save the new token",
+							"            pm.collectionVariables.set(\"access_token\", newToken);",
+							"            pm.collectionVariables.set(\"token_expiry\", expiryTime);",
+							"            ",
+							"            console.log(\"New token obtained:\", newToken);",
+							"            console.log(\"Token expires at:\", new Date(expiryTime));",
+							"        }",
+							"    });",
+							"} else {",
+							"    console.log(\"Using existing valid token\");",
+							"}"
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{access_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"ZGTFI_TERMS_OF_PAYMENT_PROP\": {\n\t\t\"I_BLDAT\": \"20250801\",\n\t\t\"I_BUDAT\": \"20250822\",\n\t\t\"I_BUKRS\": \"\",\n\t\t\"I_CPUDT\": \"20250822\",\n\t\t\"I_LIFNR\": \"\",\n\t\t\"I_REINDAT\": \"\",\n\t\t\"I_ZFBDT\": \"\",\n\t\t\"I_ZTERM\": \"Z065\"\n\t}\n}"
+				},
+				"url": {
+					"raw": "https://olamagri-qas.test.apimanagement.ap11.hana.ondemand.com/OA_RISE_BAPI",
+					"protocol": "https",
+					"host": [
+						"olamagri-qas",
+						"test",
+						"apimanagement",
+						"ap11",
+						"hana",
+						"ondemand",
+						"com"
+					],
+					"path": [
+						"OA_RISE_BAPI"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://olamagri-qas.test.apimanagement.ap11.hana.ondemand.com/OA_RISE_BAPI",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{access_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"BAPI_ENTRYSHEET_GETDETAIL\": {\n    \"ENTRYSHEET\": \"1002970348\",\n    \"LONG_TEXTS\": \"\",\n    \"ENTRYSHEET_ACCOUNT_ASSIGNMENT\": {\n      \"item\": {\n        \"DELETE_IND\": \"\",\n        \"PERCENTAGE\": \"\",\n        \"ACCASS_VAL\": \"\",\n        \"GL_ACCOUNT\": \"\",\n        \"COSTCENTER\": \"\",\n        \"SD_DOC\": \"\",\n        \"SUB_NUMBER\": \"\",\n        \"ORDER\": \"\",\n        \"CO_AREA\": \"\",\n        \"TO_COSTCTR\": \"\",\n        \"TO_ORDER\": \"\",\n        \"COST_OBJ\": \"\",\n        \"PROFIT_CTR\": \"\",\n        \"WBS_ELEM\": \"\",\n        \"ROUTING_NO\": \"\",\n        \"RL_EST_KEY\": \"\",\n        \"COUNTER\": \"\",\n        \"PART_ACCT\": \"\",\n        \"FUND\": \"\",\n        \"TAX_CODE\": \"\",\n        \"TAXJURCODE\": \"\",\n        \"ACTIVITY\": \"\",\n        \"RES_ITEM\": \"\",\n        \"BUDGET_PERIOD\": \"\"\n      }\n    },\n    \"ENTRYSHEET_HEADER_TEXT\": {\n      \"item\": {\n        \"SHEET_NO\": \"\",\n        \"TEXT_ID\": \"\",\n        \"TEXT_LINE\": \"\"\n      }\n    },\n    \"ENTRYSHEET_SERVICES\": {\n      \"item\": {\n        \"LINE_NO\": \"\",\n        \"OUTL_LEVEL\": \"\",\n        \"OUTL_NO\": \"\",\n        \"SUBPCKG_NO\": \"\",\n        \"DELETE_IND\": \"\",\n        \"EDITION\": \"\",\n        \"SSC_ITEM\": \"\",\n        \"EXT_SERV\": \"\",\n        \"BASE_UOM\": \"\",\n        \"PRICE_UNIT\": \"\",\n        \"GROSS_VAL\": \"\",\n        \"NET_VALUE\": \"\",\n        \"FROM_LINE\": \"\",\n        \"TO_LINE\": \"\",\n        \"SHORT_TEXT\": \"\",\n        \"WAGETYPE\": \"\",\n        \"PLN_PCKG\": \"\",\n        \"CON_PCKG\": \"\",\n        \"CON_LINE\": \"\",\n        \"TMP_PCKG\": \"\",\n        \"SSC_LIM\": \"\",\n        \"ACTUAL_QTY\": \"\",\n        \"CON_VALUE\": \"\",\n        \"CON_QTY\": \"\",\n        \"UNPL_QTY\": \"\",\n        \"BASLINE_NO\": \"\",\n        \"BASIC_LINE\": \"\",\n        \"BIDDER\": \"\",\n        \"SUPP_LINE\": \"\",\n        \"OPEN_QTY\": \"\",\n        \"INFORM\": \"\",\n        \"BLANKET\": \"\",\n        \"EVENTUAL\": \"\",\n        \"TAXJURCODE\": \"\",\n        \"PRICE_CHG\": \"\",\n        \"NOND_ITAX\": \"\",\n        \"DATE\": \"\",\n        \"ENDTIME\": \"\",\n        \"FORMULA\": \"\",\n        \"FORM_VAL1\": \"\",\n        \"FORM_VAL3\": \"\",\n        \"FORM_VAL4\": \"\",\n        \"USERF1_NUM\": \"\",\n        \"USERF1_TXT\": \"\",\n        \"GR_PRICE\": \"\",\n        \"HI_LINE_NO\": \"\",\n        \"EXTREFKEY\": \"\",\n        \"EXTERNAL_ITEM_ID\": \"\"\n      }\n    },\n    \"ENTRYSHEET_SERVICES_TEXTS\": {\n      \"item\": {\n        \"LINE_NO\": \"\",\n        \"TEXT_ID\": \"\",\n        \"FORMAT_COL\": \"\",\n        \"TEXT_LINE\": \"\"\n      }\n    },\n    \"ENTRYSHEET_SRV_ACCASS_VALUES\": {\n      \"item\": {\n        \"PCKG_NO\": \"\",\n        \"SERNO_LINE\": \"\",\n        \"INACTIVE\": \"\",\n        \"SERIAL_NO\": \"\",\n        \"HPACKNO\": \"\"\n      }\n    },\n    \"RETURN\": {\n      \"item\": {\n        \"TYPE\": \"\",\n        \"ID\": \"\",\n        \"LOG_NO\": \"\",\n        \"MESSAGE_V2\": \"\"\n      }\n    }\n  }\n}\n"
+				},
+				"url": {
+					"raw": "https://olamagri-qas.test.apimanagement.ap11.hana.ondemand.com/OA_RISE_BAPI",
+					"protocol": "https",
+					"host": [
+						"olamagri-qas",
+						"test",
+						"apimanagement",
+						"ap11",
+						"hana",
+						"ondemand",
+						"com"
+					],
+					"path": [
+						"OA_RISE_BAPI"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://olamagri-qas.test.apimanagement.ap11.hana.ondemand.com/OA_RISE_BAPI",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{access_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"ZGTFIFM_MMPUR_EKBZ_READ_EBELN\": {\n\t\t\"PI_EBELN\": \"4500621169\",\n\t\t\"ET_ZEKBZ\": {\n\t\t\t\"item\": {\n\t\t\t\t\t\"EBELN\": \"\",\n\t\t\t\t\t\"EBELP\": \"\",\n\t\t\t\t\t\"ZAEHK\": \"\",\n\t\t\t\t\t\"VGABE\": \"\",\n\t\t\t\t\t\"BELNR\": \"\",\n\t\t\t\t\t\"BUZEI\": \"\",\n\t\t\t\t\t\"XBLNR\": \"\",\n\t\t\t\t\t\"FRBNR\": \"\",\n\t\t\t\t\t\"LIFNR\": \"\",\n\t\t\t\t\t\"REEWR\": \"\",\n\t\t\t\t\t\"KSCHL\": \"\",\n\t\t\t\t\t\"BPMNG\": \"\",\n\t\t\t\t\t\"AREWB\": \"\",\n\t\t\t\t\t\"SAPRL\": \"\",\n\t\t\t\t\t\"DMBTR_POP\": \"\",\n\t\t\t\t\t\"WRBTR_POP\": \"\",\n\t\t\t\t\t\"AREWR_POP\": \"\",\n\t\t\t\t\t\"KUDIF\": \"\",\n\t\t\t\t\t\"XMACC\": \"\",\n\t\t\t\t\t\"LFBNR\": \"\"\n\t\t\t\t}\n\t\t},\n\t\t\"PTO_EKBZ\": {\n\t\t\t\"item\": {\n\t\t\t\t\t\"MANDT\": \"\",\n\t\t\t\t\t\"STUNR\": \"\",\n\t\t\t\t\t\"VGABE\": \"\",\n\t\t\t\t\t\"BUZEI\": \"\",\n\t\t\t\t\t\"BEWTP\": \"\",\n\t\t\t\t\t\"WRBTR\": \"\",\n\t\t\t\t\t\"WAERS\": \"\",\n\t\t\t\t\t\"SHKZG\": \"\",\n\t\t\t\t\t\"BPMNG\": \"\",\n\t\t\t\t\t\"AREWW\": \"\",\n\t\t\t\t\t\"VNETW\": \"\",\n\t\t\t\t\t\"AREWB\": \"\",\n\t\t\t\t\t\"SAPRL\": \"\",\n\t\t\t\t\t\"MENGE_POP\": \"\",\n\t\t\t\t\t\"WRBTR_POP\": \"\",\n\t\t\t\t\t\"BPMNG_POP\": \"\",\n\t\t\t\t\t\"WKURS\": \"\"\n\t\t\t\t},\n\t\t\t\"_xmlns\": \"\"\n\t\t},\n\t\t\"PTO_EKBZ_MA\": {\n\t\t\t\"item\": {\n\t\t\t\t\"MANDT\": \"\",\n\t\t\t\t\"EBELN\": \"\",\n\t\t\t\t\"EBELP\": \"6\",\n\t\t\t\t\"VGABE\": \"\",\n\t\t\t\t\"GJAHR\": \"8\",\n\t\t\t\t\"XUNPL\": \"\",\n\t\t\t\t\"SHKZG\": \"\",\n\t\t\t\t\"MENGE_F\": \"\",\n\t\t\t\t\"MENGE\": \"\",\n\t\t\t\t\"BPMNG\": \"\",\n\t\t\t\t\"REWRB\": \"\",\n\t\t\t\t\"DMBT2\": \"\",\n\t\t\t\t\"AREW2\": \"\",\n\t\t\t\t\"CURTP3\": \"\",\n\t\t\t\t\"AREW3\": \"\"\n\t\t\t},\n\t\t\t\"_xmlns\": \"\"\n\t\t}\n\t}\n}"
+				},
+				"url": {
+					"raw": "https://olamagri-qas.test.apimanagement.ap11.hana.ondemand.com/OA_RISE_BAPI",
+					"protocol": "https",
+					"host": [
+						"olamagri-qas",
+						"test",
+						"apimanagement",
+						"ap11",
+						"hana",
+						"ondemand",
+						"com"
+					],
+					"path": [
+						"OA_RISE_BAPI"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://olamagri-qas.test.apimanagement.ap11.hana.ondemand.com/OA_RISE_BAPI",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{access_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"ZGTFIFM_OT_ACC_DOC_REVERSAL\": {\n\t\t\"IS_REVERSAL\": {\n\t\t\t\"INVOICEDOCNUMBER\": \"1900010632\",\n\t\t\t\"FISCALYEAR\": \"2025\",\n\t\t\t\"COMP_CODE\": \"NG12\",\n\t\t\t\"REASONREVERSAL\": \"01\",\n\t\t\t\"POSTINGDATE\": \"20250828\"\n\t\t},\n\t\t\"IV_REF2\": \"687368287\",\n\t\t\"IV_USERNAME\": \"ROA_SPRINTAP\"\n\t\t\n}\n}"
+				},
+				"url": {
+					"raw": "https://olamagri-qas.test.apimanagement.ap11.hana.ondemand.com/OA_RISE_BAPI",
+					"protocol": "https",
+					"host": [
+						"olamagri-qas",
+						"test",
+						"apimanagement",
+						"ap11",
+						"hana",
+						"ondemand",
+						"com"
+					],
+					"path": [
+						"OA_RISE_BAPI"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
